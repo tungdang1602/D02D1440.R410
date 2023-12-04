@@ -1,0 +1,328 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D02E1440
+</name>
+</assembly>
+<members>
+<member name="P:D02E1440.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D02E1440.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:D02E1440.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:D02E1440.D02X0000">
+	<summary>
+ D02E1440: Chứa các màn hình Danh mục
+ Sub Main và các vấn đề liên quan đến việc khởi động exe con
+ </summary>
+</member><member name="F:D02E1440.D02X0001.MODULED02">
+	<summary>
+ Module đang coding D02E1440
+ </summary>
+</member><member name="F:D02E1440.D02X0001.D02">
+	<summary>
+ Chuỗi D02
+ </summary>
+</member><member name="F:D02E1440.D02X0001.L3_APP_NAME">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E1440.D02X0001.L3_HS_SECTION">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E1440.D02X0001.L3_HS_MODULE">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E1440.D02X0001.L3_HS_VALUE">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E1440.D02X0001.gbSaveOK">
+	<summary>
+ Dùng cho kiểm tra luu thanh cong 
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.OriginalAmount">
+	<summary>
+ format thành tiền
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.OriginalAmountRound">
+	<summary>
+ Số làm tròn của thành tiền
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.ConvertedAmount">
+	<summary>
+ format thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.ConvertedAmountRound">
+	<summary>
+ Số làm tròn của thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.ExchangeRate">
+	<summary>
+ format tỷ giá
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.ExchangeRateRound">
+	<summary>
+ Số làm tròn của tỷ giá
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.BaseCurrencyID">
+	<summary>
+ Nguyên tệ gốc
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.DecimalSeperator">
+	<summary>
+ Dấu phân cách thập phân
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormat.ThousandSeperator">
+	<summary>
+ Dấu phân cách hàng ngàn
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.ExchangeRate">
+	<summary>
+ format tỷ giá
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.DecimalPlaces">
+	<summary>
+ format nguyên tệ
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.MyOriginal">
+	<summary>
+ format nguyên tệ ứng với mỗi loại tiền
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.D90_Converted">
+	<summary>
+ format tiền quy đổi
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.D07_Quantity">
+	<summary>
+ format số lượng, số lượng QĐ: nhóm sản xuất (D06, D07, D12, D37); nhóm kinh doanh
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.D07_UnitCost">
+	<summary>
+ format đơn giá: nhóm sản xuất (D06, D07, D12, D37); nhóm kinh doanh
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.D08_Quantity">
+	<summary>
+ format số lượng, số lượng QĐ: nhóm sản xuất (D08, D20, D30, D31, D32, D33, D34, D35, D36)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.D08_UnitCost">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.D08_Ratio">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.BOMQty">
+	<summary>
+ format số lượng, số lượng QĐ: nhóm sản xuất (danh mục Bộ định mức D08, danh mục Cấu trúc sản phẩm D32)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.BOMPrice">
+	<summary>
+ format đơn giá: nhóm sản xuất (danh mục Bộ định mức D08, danh mục Cấu trúc sản phẩm D32)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.BOMAmt">
+	<summary>
+ format thành tiền: nhóm sản xuất (danh mục Bộ định mức D08, danh mục Cấu trúc sản phẩm D32)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.StructureFormatNew.DefaultNumber2">
+	<summary>
+ Format 2 số lẻ (không theo quy tắc nào)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:D02E1440.D02X0001.StructureFormatNew">
+	<summary>
+ Khai báo structure cho phần định dạng format theo chuẩn chung mới lấy từ D91P9300
+ </summary>
+</member><member name="T:D02E1440.D02X0001.Button">
+	<summary>
+ Khai bao de chon cac button tren luoi vd: Khoan muc, doi tuong,mat hang...
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0001.D02Options">
+	<summary>
+ Lưu trữ các thiết lập tùy chọn
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.MessageAskBeforeSave">
+	<summary>
+ Hỏi trước khi lưu
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.MessageWhenSaveOK">
+	<summary>
+ Thông báo khi lưu thành công
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.ViewFormPeriodWhenAppRun">
+	<summary>
+ Hiển thị form chọn kỳ kế toán khi chạy chương trình
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.SaveLastRecent">
+	<summary>
+ Lưu giá trị gần nhất
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.DefaultDivisionID">
+	<summary>
+ Lưu đơn vị mặc định
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.LockConvertedAmount">
+	<summary>
+ Khóa thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.RoundConvertedAmount">
+	<summary>
+ Làm tròn thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.ViewWorkflow">
+	<summary>
+ Hiển thị quy trình sơ đồ nghiệp vụ
+ </summary>
+</member><member name="F:D02E1440.D02X0001.StructureOption.ReportLanguage">
+	<summary>
+ Ngôn ngữ báo cáo
+ </summary>
+</member><member name="T:D02E1440.D02X0001.StructureOption">
+	<summary>
+ Khai báo Structure cho phần Tùy chọn của Module
+ </summary>
+</member><member name="T:D02E1440.D02X0001">
+	<summary>
+ Module này liên qua đến các khai báo biến, enum, ... toàn cục
+ </summary>
+	<remarks>Các khai báo ở đây không được trùng với các khai báo ở các Module D99Xxxxx</remarks>
+</member><member name="M:D02E1440.D02X0002.UpdateOrderNum(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+ Cập nhật số thứ tự cho lưới
+ </summary>
+</member><member name="M:D02E1440.D02X0002.CheckExist(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Int32,System.String)">
+	<summary>
+ Kiểm tra sự tồn tại của 1 giá trị trong 1 cột trên lưới với nguồn dữ liệu trong TDBDropdown
+ </summary>
+</member><member name="M:D02E1440.D02X0002.SetCurrentRow(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.String)">
+	<summary>
+ Xác định ví trí hiện hành của lưới
+ </summary>
+</member><member name="M:D02E1440.D02X0002.Sum(System.Int32,C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Tính tổng cho 1 cột tương ứng trên lưới
+ </summary>
+	<param name="ipCol"></param>
+	<param name="C1Grid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E1440.D02X0002.TongCong(System.Int32)">
+	<summary>
+ TONG CONG SO DONG TREN LUOI
+ </summary>
+	<param name="iRow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:D02E1440.D02X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+	<remarks>Các khai báo Sub và Function ở đây không được trùng với các khai báo
+ ở các module D99Xxxxx
+ </remarks>
+</member><member name="F:D02E1440.D02X0003.PARA_Server">
+	<summary>
+ Server truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_Database">
+	<summary>
+ Database truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_ConnectionUser">
+	<summary>
+ User login vào Lemon3 truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_UserID">
+	<summary>
+ User login vào Database truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_Password">
+	<summary>
+ Password user login vào Database truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_DivisionID">
+	<summary>
+ Đơn vị truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_TranMonth">
+	<summary>
+ Tháng kế toán truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_TranYear">
+	<summary>
+ Năm kế toán truyền vào
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_Language">
+	<summary>
+ Ngôn ngữ truyền vào
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E1440.D02X0003.PARA_FormID">
+	<summary>
+ Form ID dùng để hiện thị. Ví dụ: DxxFxxxx
+ </summary>
+</member><member name="F:D02E1440.D02X0003.PARA_FormIDPermission">
+	<summary>
+ Form ID dùng để phân quyền. Ví dụ: DxxFxxxx
+ </summary>
+</member><member name="T:D02E1440.D02X0003">
+	<summary>
+ Định nghĩa các biến truyền qua lại giữa các exe với nhau
+ </summary>
+</member><member name="M:D02E1440.D02X0004.LoadOptions">
+	<summary>
+ Load toàn bộ các thông số tùy chọn vào biến D02Options
+ </summary>
+</member><member name="M:D02E1440.D02X0004.LoadFormatsNew">
+	<summary>
+ Load toàn bộ các thông số format cho biến DxxFormat theo chuẩn chung mới lấy từ D91P9300
+ </summary>
+</member><member name="M:D02E1440.D02X0004.AskSave">
+	<summary>
+ Hỏi trước khi lưu tùy thuộc vào thiết lập ở phần Tùy chọn
+ </summary>
+</member><member name="M:D02E1440.D02X0004.AskDelete">
+	<summary>
+ Thông báo trước khi xóa
+ </summary>
+</member><member name="M:D02E1440.D02X0004.SaveOK">
+	<summary>
+ Thông báo khi lưu thành công tùy theo phần thiết lập ở tùy chọn
+ </summary>
+</member><member name="M:D02E1440.D02X0004.DeleteOK">
+	<summary>
+ Thông báo sau khi xóa thành công
+ </summary>
+</member><member name="M:D02E1440.D02X0004.SaveNotOK">
+	<summary>
+ Thông báo không lưu được dữ liệu
+ </summary>
+</member><member name="M:D02E1440.D02X0004.DeleteNotOK">
+	<summary>
+ Thông báo không xóa được dữ liệu
+ </summary>
+</member><member name="T:D02E1440.D02X0004">
+	<summary>
+ Các vấn đề liên quan đến Thông tin hệ thống và Tùy chọn
+ </summary>
+</member>
+</members>
+</doc>

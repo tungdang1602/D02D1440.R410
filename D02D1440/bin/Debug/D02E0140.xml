@@ -1,0 +1,3492 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D02E0140
+</name>
+</assembly>
+<members>
+<member name="M:D02E0140.D99C1001.#ctor(D02E0140.EnumLanguage)">
+	<summary>
+ Khởi tạo Finder với biến ngôn ngữ truyền vào
+ </summary>
+	<param name="language">Ngôn ngữ cần sử dụng</param>
+	<remarks></remarks>
+</member><member name="P:D02E0140.D99C1001.Language">
+	<summary>
+ Thay đổi ngôn ngữ sử dụng
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="T:D02E0140.D99C1001">
+	<summary>
+ Liên quan đến Finder
+ </summary>
+</member><member name="F:D02E0140.EnumDataType.DataString">
+	<summary>
+ Kiểu dữ liệu chuỗi nhưng chỉ nhập số VD: số điện thoại, Số CMND, ...
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.EnumDataType.TinyInt">
+	<summary>
+ Kiểu dữ liệu TinyInt
+ </summary>
+</member><member name="F:D02E0140.EnumDataType.Int">
+	<summary>
+ Kiểu dữ liệu Int
+ </summary>
+</member><member name="F:D02E0140.EnumDataType.Money">
+	<summary>
+ Kiểu dữ liệu Money
+ </summary>
+</member><member name="F:D02E0140.EnumDataType.SmallMoney">
+	<summary>
+ Kiểu dữ liệu SmallMoney
+ </summary>
+</member><member name="F:D02E0140.EnumDataType.Number">
+	<summary>
+ Kiểu dữ liệu Decimal(28,8)
+ </summary>
+</member><member name="T:D02E0140.EnumDataType">
+	<summary>
+ Enum miêu tả các kiểu dữ liệu số được sử dụng dưới SQL
+ </summary>
+</member><member name="F:D02E0140.EnumLanguage.Vietnamese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Việt
+ </summary>
+</member><member name="F:D02E0140.EnumLanguage.English">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Anh
+ </summary>
+</member><member name="F:D02E0140.EnumLanguage.French">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Pháp (chưa sử dụng)
+ </summary>
+</member><member name="F:D02E0140.EnumLanguage.Chinese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Trung Quốc (chưa sử dụng)
+ </summary>
+</member><member name="F:D02E0140.EnumLanguage.Japanese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Nhật (chưa sử dụng)
+ </summary>
+</member><member name="T:D02E0140.EnumLanguage">
+	<summary>
+ Enum miêu tả trạng thái của ngôn ngữ hiện tại
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormAdd">
+	<summary>
+ Form ở trạng thái: Thêm mới
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormEdit">
+	<summary>
+ Form ở trạng thái: Sửa
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormEditOther">
+	<summary>
+ Form ở trạng thái: Sửa khác
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormView">
+	<summary>
+ Form ở trạng thái: Xem
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormAddInvoice">
+	<summary>
+ Form ở trạng thái: Thêm hóa đơn
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormAddVoucher">
+	<summary>
+ Form ở trạng thái: Thêm phiếu
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormEditInvoice">
+	<summary>
+ Form ở trạng thái: Sửa hóa đơn
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormEditVoucher">
+	<summary>
+ Form ở trạng thái: Sửa phiếu
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormCopy">
+	<summary>
+ Form ở trạng thái: Copy
+ </summary>
+</member><member name="F:D02E0140.EnumFormState.FormOther">
+	<summary>
+ Form ở trạng thái: Khác
+ </summary>
+</member><member name="T:D02E0140.EnumFormState">
+	<summary>
+ Enum miêu tả trạng thái của form
+ </summary>
+</member><member name="F:D02E0140.EnumPermission.None">
+	<summary>
+ Chưa có quyền
+ </summary>
+</member><member name="F:D02E0140.EnumPermission.View">
+	<summary>
+ Quyền: Xem
+ </summary>
+</member><member name="F:D02E0140.EnumPermission.Add">
+	<summary>
+ Quyền: Xem, Thêm mới
+ </summary>
+</member><member name="F:D02E0140.EnumPermission.EditAdd">
+	<summary>
+ Quyền: Xem, Thêm mới, Sửa
+ </summary>
+</member><member name="F:D02E0140.EnumPermission.DeleteEditAdd">
+	<summary>
+ Quyền: Xem, Thêm mới, Sửa, Xóa
+ </summary>
+</member><member name="T:D02E0140.EnumPermission">
+	<summary>
+ Enum miêu tả trạng thái phân quyền của form
+ </summary>
+</member><member name="F:D02E0140.EnumKey.Number">
+	<summary>
+ Kiểm tra các số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+ </summary>
+</member><member name="F:D02E0140.EnumKey.NumberDot">
+	<summary>
+ Kiểm tra các số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 và dấu chấm (.)
+ </summary>
+</member><member name="F:D02E0140.EnumKey.NumberSign">
+	<summary>
+ Kiểm tra các số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 và dấu trừ (-)
+ </summary>
+</member><member name="F:D02E0140.EnumKey.NumberDotSign">
+	<summary>
+ Kiểm tra các số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, dấu chấm (.) và dấu trừ (-)
+ </summary>
+</member><member name="F:D02E0140.EnumKey.Custom">
+	<summary>
+ Kiểm tra có trong chuỗi truyền vào
+ </summary>
+</member><member name="T:D02E0140.EnumKey">
+	<summary>
+ Enum miêu tả kiểm tra phím nhấn
+ </summary>
+</member><member name="F:D02E0140.D99X0000.COMMA">
+	<summary>
+ Dấu phẩy ", " dùng cho các lệnh SQL
+ </summary>
+</member><member name="F:D02E0140.D99X0000.SPLIT0">
+	<summary>
+ Split thứ 0
+ </summary>
+</member><member name="F:D02E0140.D99X0000.SPLIT1">
+	<summary>
+ Split thứ 1
+ </summary>
+</member><member name="F:D02E0140.D99X0000.SPLIT2">
+	<summary>
+ Split thứ 2
+ </summary>
+</member><member name="F:D02E0140.D99X0000.SPLIT3">
+	<summary>
+ Split thứ 3
+ </summary>
+</member><member name="F:D02E0140.D99X0000.COLOR_BACKCOLOR">
+	<summary>
+ Màu BackColor theo chuẩn của Diginet
+ </summary>
+</member><member name="F:D02E0140.D99X0000.MaskFormatDate">
+	<summary>
+ Hằng số mặc định cho ngày là __/__/____
+ </summary>
+</member><member name="F:D02E0140.D99X0000.LM_DLM">
+	<summary>
+ Dùng cắt chuỗi Tìm kiếm
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.giModuleAdmin">
+	<summary>
+ Có module Admin không, 1: có, 0: không
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.gsDivisionID">
+	<summary>
+ Đơn vị hiện tại
+ </summary>
+</member><member name="F:D02E0140.D99X0000.giTranMonth">
+	<summary>
+ Tháng kế toán hiện tại
+ </summary>
+</member><member name="F:D02E0140.D99X0000.giTranYear">
+	<summary>
+ Năm kế toán hiện tại
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsUserID">
+	<summary>
+ User hiện tại đang login vào hệ thống Lemon3
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsCompanyID">
+	<summary>
+ Database hiện tại đang dùng
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsConnectionUser">
+	<summary>
+ User kết nối vào Server đang dùng
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsConnectionString">
+	<summary>
+ Chuỗi kết nối toàn cục đến Server
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsServer">
+	<summary>
+ Server đang dùng
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsPassword">
+	<summary>
+ Password kết nối đến Server
+ </summary>
+</member><member name="F:D02E0140.D99X0000.geLanguage">
+	<summary>
+ Enum ngôn ngữ hiện tại
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsLanguage">
+	<summary>
+ Chuỗi '01' hoặc '84' miêu tả ngôn ngữ hiện tại
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gbClosed">
+	<summary>
+ = True nếu đã khóa sổ, ngược lại chưa khóa sổ
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsStringKey">
+	<summary>
+ Biến dùng cho việc sinh khóa IGE
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gsHelpFileName">
+	<summary>
+ Đường dẫn file help toàn cục
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gConn">
+	<summary>
+ SqlConnection toàn cục kết nối đến hệ thống
+ </summary>
+</member><member name="F:D02E0140.D99X0000.OptSettings">
+	<summary>
+ Biến lưu trữ màu sắc toàn cục cho module
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gnLastKey">
+	<summary>
+ Dùng cho việc sinh IGE
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gnNewLastKey">
+	<summary>
+ Dùng cho việc sinh IGE (Số phiếu khi người dùng click vào chìa khóa)
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gbLockedDivisionID">
+	<summary>
+ Biến lưu Đơn vị hiện tại có bị khóa không
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gbEnabledUseFind">
+	<summary>
+ Biến lưu giá trị tìm kiếm lần đầu tiên
+ </summary>
+</member><member name="F:D02E0140.D99X0000.gbArrAnaValidate">
+	<summary>
+ Dùng để kiểm tra 10 khoản mục theo thiết lập D91
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.giArrAnaLength">
+	<summary>
+ Dùng để kiểm tra chiều dài 10 khoản mục
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.gbArrAnaVisiable">
+	<summary>
+ Dùng để kiểm tra Khoản mục có được sử dụng ở D91 không
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.gcControl">
+	<summary>
+ Dùng để lưu lại tên control khi nhấn phím F11
+ </summary>-
+ <remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.COLOR_BACKCOLOROBLIGATORY">
+	<summary>
+ Màu nền của Control bắt buộc nhập
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.gbArrSpecVisiable">
+	<summary> 
+ Dùng để kiểm tra Quy cách có được sử dụng ở D07 không
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.arrAdvanced">
+	<summary>
+ Mảng tìm kiếm
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.CallWebService">
+	<summary>
+ Class của WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.nWSTimeOut">
+	<summary>
+ Thời gian TimeOut để connect WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.giAppMode">
+	<summary>
+ Mode sử dụng 
+ 0: Trực tiếp; 1: Online
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.gsAppServer">
+	<summary>
+ Đường dẫn đến máy WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0000.gsWSSPara01">
+	<summary>
+ 5 thông số của WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.DeleteGridEvent(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable,System.Boolean@)">
+	<summary>
+ Sau khi Delete thành công dưới server thì gọi hàm này, không gọi hàm LoadGrid
+ </summary>
+	<param name="tdbg">Lưới đang delete</param>
+	<param name="dt">Datatable đổ nguồn cho lưới</param>
+	<param name="bEnabledUseFind">Cờ bật cho tìm kiếm hoặc Liệt kê tất cả</param>
+	<remarks>Gọi hàm tại sự kiện của menu Delete, sau khi thực thi dữ liệu thành công</remarks>
+</member><member name="M:D02E0140.D99X0000.DeleteGridEventMultiRows(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable,System.Boolean@)">
+	<summary>
+ Xóa nhiều dòng trên lưới Truy vấn
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="dt">DataSource của lưới</param>
+	<param name="bEnabledUseFind"></param>
+	<remarks>Sau khi Delete thành công dưới server thì gọi hàm này, không gọi hàm LoadGrid</remarks>
+</member><member name="M:D02E0140.D99X0000.DeleteMultiRows(C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Xóa nhiều dòng trên lưới nhập liệu
+ </summary>
+	<param name="c1Grid"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.FilterChangeGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Text.StringBuilder@,System.Text.StringBuilder@)">
+	<summary>
+ Hàm lấy dữ liệu từ FilterBar change
+ </summary>
+	<param name="tdbg"> Lưới truyền vào</param>
+	<param name="sFilter"> Giá trị FilterBar</param>
+	<remarks>Gọi hàm tại sự kiện tdbg_FilterChange</remarks>
+</member><member name="M:D02E0140.D99X0000.ResetFilter(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Text.StringBuilder@,System.Boolean@,System.Text.StringBuilder@)">
+	<summary>
+ Hàm lấy refresh dữ liệu từ FilterBar
+ </summary>
+	<param name="tdbg"> Lưới truyền vào</param>
+	<param name="sFilter"> Giá trị FilterBar</param>
+	<param name="bRefreshFilter"> Cờ bật khi giá trị FilterBar được gán = ""</param>
+	<param name="sFilterServer"> Giá trị FilterBar dùng cho Server để truyền vào khi in báo cáo</param>
+	<remarks>Gọi hàm tại hàm LoadTDBG</remarks>
+</member><member name="M:D02E0140.D99X0000.GeneralItems">
+	<summary>
+ Từ ngữ chung
+ </summary>
+	<remarks>Gọi hàm chỗ LoadOthers</remarks>
+</member><member name="M:D02E0140.D99X0000.SetResolutionForm(System.Windows.Forms.Form)">
+	<summary>
+ Điều chỉnh độ phân giải của form KHÔNG có popupmenu
+ </summary>
+	<param name="MainCtrl">truyền vào tên form</param>
+	<remarks>cách gọi tại form_load: SetResolutionForm (Me)</remarks>
+</member><member name="M:D02E0140.D99X0000.SetResolutionForm(System.Windows.Forms.Form,C1.Win.C1Command.C1ContextMenu)">
+	<summary>
+ Điều chỉnh độ phân giải của form CÓ 1 C1ContextMenu
+ </summary>
+	<param name="MainCtrl">Tên form</param>
+	<param name="ctrlMenu">C1ContextMenu</param>
+	<remarks>cách gọi tại form_load: SetResolutionForm (Me, C1ContextMenu)</remarks>
+</member><member name="M:D02E0140.D99X0000.SetResolutionForm(System.Windows.Forms.Form,C1.Win.C1Command.C1ContextMenu,C1.Win.C1Command.C1ContextMenu)">
+	<summary>
+ Điều chỉnh độ phân giải của form CÓ 2 C1ContextMenu
+ </summary>
+	<param name="MainCtrl">Tên form</param>
+	<param name="ctrlMenu1">C1ContextMenu</param>
+	<param name="ctrlMenu2">C1ContextMenu1</param>
+	<remarks>cách gọi tại form_load: SetResolutionForm (Me, C1ContextMenu, C1ContextMenu1)</remarks>
+</member><member name="M:D02E0140.D99X0000.SetResolutionForm(System.Windows.Forms.Form,C1.Win.C1Command.C1ContextMenu,C1.Win.C1Command.C1ContextMenu,C1.Win.C1Command.C1ContextMenu)">
+	<summary>
+ Điều chỉnh độ phân giải của form CÓ 3 C1ContextMenu
+ </summary>
+	<param name="MainCtrl">Tên form</param>
+	<param name="ctrlMenu1">C1ContextMenu</param>
+	<param name="ctrlMenu2">C1ContextMenu1</param>
+	<param name="ctrlMenu3">C1ContextMenu2</param>
+	<remarks>cách gọi tại form_load: SetResolutionForm (Me, C1ContextMenu, C1ContextMenu1, C1ContextMenu2)</remarks>
+</member><member name="M:D02E0140.D99X0000.SetResolutionForm(System.Windows.Forms.Form,C1.Win.C1Command.C1ContextMenu,C1.Win.C1Command.C1ContextMenu,C1.Win.C1Command.C1ContextMenu,C1.Win.C1Command.C1ContextMenu)">
+	<summary>
+ Điều chỉnh độ phân giải của form CÓ 4 popupmenu
+ </summary>
+	<param name="MainCtrl">Tên form</param>
+	<param name="ctrlMenu1">C1ContextMenu</param>
+	<param name="ctrlMenu2">C1ContextMenu1</param>
+	<param name="ctrlMenu3">C1ContextMenu2</param>
+	<param name="ctrlMenu4">C1ContextMenu3</param>
+	<remarks>cách gọi tại form_load: SetResolutionForm (Me, C1ContextMenu, C1ContextMenu1, C1ContextMenu2, C1ContextMenu3)</remarks>
+</member><member name="M:D02E0140.D99X0000.SetResolutionC1ContextMenu(C1.Win.C1Command.C1ContextMenu)">
+	<summary>
+ Điều chỉnh độ phân giải của menu
+ </summary>
+	<param name="ctrl"></param>
+	<remarks>Cách gọi tại form_load: SetResolutionC1ContextMenu (C1ContextMenu)</remarks>
+</member><member name="M:D02E0140.D99X0000.AllowAdjustResolution">
+	<summary>
+ Lấy Điều chỉnh độ phân giải ở Tùy chọn của D00
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTDBGridSpecificationCaption(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary> 
+ Gán caption cho 10 cột quy cách 
+ </summary>
+	<param name="tdbg"> Lưới cần gán caption </param>
+	<param name="COL_Spec01ID"> Cột bắt đầu </param>
+	<param name="Split"> Split cần gán </param>
+	<remarks> tdbg.Columns(iIndex).Tag chứa giá trị Boolean chỉ cột này có hiển thị hay không </remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTDBDropDownSpecification(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Boolean)">
+	<summary> 
+ Đổ nguồn cho 10 quy cách 
+ </summary>
+	<param name="tdbdSpec01ID"></param>
+	<param name="tdbdSpec02ID"></param>
+	<param name="tdbdSpec03ID"></param>
+	<param name="tdbdSpec04ID"></param>
+	<param name="tdbdSpec05ID"></param>
+	<param name="tdbdSpec06ID"></param>
+	<param name="tdbdSpec07ID"></param>
+	<param name="tdbdSpec08ID"></param>
+	<param name="tdbdSpec09ID"></param>
+	<param name="tdbdSpec10ID"></param>
+	<param name="tdbg"></param>
+	<param name="COL_Spec01ID"> Cột bắt đầu </param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.SetSysDateTime">
+	<summary>
+ Set ngày, số của Lemon3 không phụ thuộc vào Window. Nơi gọi tại dòng đầu tiên của hàm Main()
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.FooterSum(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32[],System.Int32,System.Boolean)">
+	<summary>
+ Tính tổng Footer cho các cột số trên lưới
+ </summary>
+	<param name="tdbg">Tập các cột cần tính tổng (Khai báo biến chung trong form)  VD: Dim iColumnsSum() As Integer = {COL_OQuantity, COL_CQuantity, COL_OAmount, COL_CAmount}</param>
+	<param name="iColumns"></param>
+	<param name="COL_OrderNo">Cột STT nếu có</param>
+	<remarks>Gọi hàm FooterSum(tdbg, iCols, COL_OrderNum) </remarks>
+ Chú ý: phải đặt hàm này sau hàm tdbg_NumberFormat
+ Hàm này được đặt ở 4 chỗ:
+ 1. LoadGrid 
+ 2. tdbg_AfterColUpdate 
+ 3. tdbg_AfterDelete 
+ 4. tdbg_KeyDown (nếu có Shift+Insert hoặc F7, F8, ....)
+
+</member><member name="M:D02E0140.D99X0000.FooterSum(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String[],System.Boolean)">
+	<summary>
+ Tính tổng Footer cho các cột số trên lưới
+ </summary>
+	<param name="tdbg">Tập các cột cần tính tổng (Khai báo biến chung trong form)  VD: Dim iColumnsSum() As String = {COLS_OQuantity, COLS_CQuantity, COLS_OAmount, COLS_CAmount}</param>
+	<param name="iColumns"></param>
+	<remarks>Gọi hàm FooterSum(tdbg, iCols, COL_OrderNum) </remarks>
+ Chú ý: phải đặt hàm này sau hàm tdbg_NumberFormat
+ Hàm này được đặt ở 4 chỗ:
+ 1. LoadGrid 
+ 2. tdbg_AfterColUpdate 
+ 3. tdbg_AfterDelete 
+ 4. tdbg_KeyDown (nếu có Shift+Insert hoặc F7, F8, ....)
+
+</member><member name="M:D02E0140.D99X0000.FooterSumNew(C1.Win.C1TrueDBGrid.C1TrueDBGrid,D02E0140.D99X0000.NumberFormatColumn[])">
+	<summary>
+ Total columns of grid by FormatText Event
+ </summary>
+	<param name="tdbg"></param>
+	<param name="sColumns">List of columns have construct</param>
+	<remarks>Exp: tham khảo D07F6040</remarks>
+</member><member name="M:D02E0140.D99X0000.FooterTotalGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String)">
+	<summary>
+ Ghi FooterText của dòng Tổng cộng
+ </summary>
+	<param name="tdbg"></param>
+	<param name="sColumnName">Tên cột gắn chữ Tổng cộng</param>
+	<remarks>Cách gọi: FooterTotalGrid(tdbg, "ObjectID")</remarks>
+</member><member name="M:D02E0140.D99X0000.FooterTotalGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+ Ghi FooterText của dòng Tổng cộng
+ </summary>
+	<param name="tdbg"></param>
+	<param name="iColumnName">Index của cột gắn chữ Tổng cộng</param>
+	<remarks>Cách gọi: FooterTotalGrid(tdbg, COL_ObjectID)</remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTDBC_DAGroupID(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load combo Nhóm Truy cập dữ liệu
+ </summary>
+	<param name="tdbc"></param>
+	<param name="bUseUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableVoucherTypeID(System.String,System.String,System.Boolean)">
+	<summary>
+ Trả về table cho combo Loại chứng từ
+ </summary>
+	<param name="sModuleID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableVoucherTypeIDAll(System.String,System.Boolean)">
+	<summary>
+ Trả về table cho combo Loại chứng từ (để Lọc)
+ </summary>
+	<param name="sModuleID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadVoucherTypeID(C1.Win.C1List.C1Combo,System.String,System.String,System.Boolean)">
+	<summary>
+ Load Combo Loại chứng từ
+ </summary>
+	<param name="tdbc">tdbcVoucherTypeID</param>
+	<param name="sModuleID">Dxx</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadVoucherTypeID(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String,System.String,System.Boolean)">
+	<summary>
+ Load 2 combo Loại chứng từ có cùng nguồn
+ </summary>
+	<param name="tdbc1"></param>
+	<param name="tdbc2"></param>
+	<param name="sModuleID"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadVoucherTypeIDAll(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load Combo Loại chứng từ (để Lọc)
+ </summary>
+	<param name="tdbc">tdbcVoucherTypeID</param>
+	<param name="sModuleID">Dxx</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadVoucherTypeIDAll(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load 2 combo Loại chứng từ (để Lọc) có cùng nguồn
+ </summary>
+	<param name="tdbc1"></param>
+	<param name="tdbc2"></param>
+	<param name="sModuleID"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableObjectTypeID(System.Boolean)">
+	<summary>
+ Trả ra Table cho Loại đối tượng
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableObjectTypeIDAll(System.Boolean)">
+	<summary>
+ Trả ra Table cho Loại đối tượng có chưa %
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadObjectTypeID(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Loại đối tượng
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadObjectTypeIDAll(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Loại đối tượng có chứa %
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadObjectTypeID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Load Combo Loại đối tượng (áp dụng cho màn hình có nhiều combo có cùng nguồn dữ liệu)
+ </summary>
+	<param name="tdbc"></param>
+	<param name="dt">Bảng dữ liệu của Loại đối tượng</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadObjectTypeID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Loại đối tượng
+ </summary>
+	<param name="tdbd"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadObjectTypeIDAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Loại đối tượng có chứa %
+ </summary>
+	<param name="tdbd"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadObjectTypeID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Load Dropdown Loại đối tượng (áp dụng cho màn hình có nhiều Dropdown có cùng nguồn dữ liệu)
+ </summary>
+	<param name="tdbd"></param>
+	<param name="dt">Bảng dữ liệu của Loại đối tượng</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCreateBy">
+	<summary>
+ Lấy giá trị mặc định của người lập
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableCreateBy(System.Boolean)">
+	<summary>
+ Table load nguồn cho combo Người lập
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboCreateBy(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Người lập
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboCreateBy(C1.Win.C1List.C1Combo,System.Data.DataTable,System.Boolean)">
+	<summary>
+  Load Combo Người lập theo table có sẵn
+ </summary>
+	<param name="tdbc"></param>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.GetTextCreateBy(C1.Win.C1List.C1Combo)">
+	<summary>
+ Gán text cho combo Người lập
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableAccountID(System.String,System.Boolean)">
+	<summary>
+ Trả ra Table Tài khoản
+ </summary>
+	<param name="sClauseWhere">Nếu có điều kiện lọc thì truyền vào (ví dụ: GroupID in ('1', '13')) </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableAccountIDAll(System.String,System.Boolean)">
+	<summary>
+ Trả ra Table Tài khoản có chứa %
+ </summary>
+	<param name="sClauseWhere">Nếu có điều kiện lọc thì truyền vào (ví dụ: GroupID in ('1', '13'))</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản có chứa %
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load 2 Combo Tài khoản
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load 2 Combo Tài khoản có chứa %
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbc"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản có chứa % có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbc"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load 2 combo Tài khoản có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<param name="sClauseWhere">Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load 2 combo Tài khoản có chứa % có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<param name="sClauseWhere">Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Load combo Tài khoản (áp dụng cho màn hình có nhiều combo có cùng nguồn dữ liệu )
+ </summary>
+	<param name="tdbc"></param>
+	<param name="dt">Bảng dữ liệu tài khoản</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản
+ </summary>
+	<param name="tdbd"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản có chứa %
+ </summary>
+	<param name="tdbd"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản có chứa %
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbd"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản có chứa % có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbd"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<param name="sClauseWhere"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản có chứa % có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<param name="sClauseWhere"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản (áp dụng cho màn hình có nhiều Dropdown có cùng nguồn dữ liệu)
+ </summary>
+	<param name="tdbd"></param>
+	<param name="dt">Bảng dữ liệu Tài khoản</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableAccountIDAndOffAccount(System.String,System.Boolean)">
+	<summary>
+ Trả ra Table Tài khoản (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="sClauseWhere"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableAccountIDAndOffAccountAll(System.String,System.Boolean)">
+	<summary>
+ Trả ra Table Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="sClauseWhere"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load 2 Combo Tài khoản (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load 2 Combo Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load Combo Tài khoản (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbc"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load 2 combo Tài khoản (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<param name="sClauseWhere"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load 2 combo Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<param name="sClauseWhere"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbd"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbd"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng)
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where 
+ </summary>
+	<param name="tdbd"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load Dropdown Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where 
+ </summary>
+	<param name="tdbd"></param>
+	<param name="sClauseWhere"> Điều kiện where (ví dụ: GroupID in ('1', '13'))</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccount(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<param name="sClauseWhere"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadAccountIDAndOffAccountAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load 2 Dropdown Tài khoản có chứa % (bao gồm Tài khoản trong và ngoại bảng) có truyền thêm điều kiện Where
+ </summary>
+	<param name="tdbdFrom"></param>
+	<param name="tdbdTo"></param>
+	<param name="sClauseWhere"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableCurrencyID(System.Boolean)">
+	<summary>
+ Trả ra Table Loại tiền
+ </summary>
+	<returns></returns>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableCurrencyIDAll(System.Boolean)">
+	<summary>
+ Trả về table Loại tiền có chứa %
+ </summary>
+	<returns></returns>
+	<param name="bUseUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCurrencyID(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Loại tiền
+ </summary>
+	<param name="tdbc"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCurrencyIDAll(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Load Combo Loại tiền có chứa %
+ </summary>
+	<param name="tdbc"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCurrencyID(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Loại tiền
+ </summary>
+	<param name="tdbd"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCurrencyIDAll(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Load Dropdown Loại tiền có chứa %
+ </summary>
+	<param name="tdbd"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCurrencyIDToDate(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load Combo Loại tiền lấy tỷ giá theo ngày (module D01, D05, ... )
+ </summary>
+	<param name="tdbc"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCurrencyIDToDate(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Load Dropdown Loại tiền lấy tỷ giá theo ngày (module D01, D05, ... )
+ </summary>
+	<param name="tdbd"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableStandardReport(System.String,System.String,System.Boolean)">
+	<summary>
+ Load data of tdbcReport standard
+ </summary>
+	<param name="sModuleID">xx</param>
+	<param name="sReportTypeID">Report type</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadtdbcCustomizeReport(C1.Win.C1List.C1Combo,System.String,System.String,System.Windows.Forms.TextBox,System.Boolean)">
+	<summary>
+ Load data of tdbcCustomize
+ </summary>
+	<param name="tdbc">combo name</param>
+	<param name="sModuleID">xx</param>
+	<param name="sReportTypeID"></param>
+	<param name="txtTitle">textbox đi theo combo Đặc thù</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.GetModuleAdmin(System.String)">
+	<summary>
+ Lấy trạng thái của ModuleAdmin của D00 
+ </summary>
+	<param name="ModuleID">Mã module(Dxx)</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboDivisionIDReport(C1.Win.C1List.C1Combo,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Load dữ liệu cho combo Đơn vị ở Báo cáo
+ </summary>
+	<param name="tdbc">Tên Combo Đơn vị</param>
+	<param name="sModuleID">Mã module (Dxx)</param>
+	<param name="bG4">True: là nhóm G4</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableDivisionID(System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Trả về 1 table để load dữ liệu cho Đơn vị
+ </summary>
+	<param name="sModuleID">Mã module (Dxx)</param>
+	<param name="bG4">True: là nhóm G4</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableDivisionIDAll(System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Trả về 1 table để load dữ liệu cho Đơn vị có chứa %
+ </summary>
+	<param name="sModuleID">Mã module (Dxx)</param>
+	<param name="bG4">True: là nhóm G4</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboDivisionID(C1.Win.C1List.C1Combo,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Load dữ liệu cho Combo Đơn vị (không ở Báo cáo) 
+ </summary>
+	<param name="tdbcDivisionID"></param>
+	<param name="sModuleID">Mã module (Dxx)</param>
+	<param name="bG4">True: là nhóm G4</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboDivisionIDAll(C1.Win.C1List.C1Combo,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Load dữ liệu cho Combo Đơn vị có chứa % (không ở Báo cáo) 
+ </summary>
+	<param name="tdbcDivisionID"></param>
+	<param name="sModuleID">Mã module (Dxx)</param>
+	<param name="bG4">True: là nhóm G4</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTablePeriodReport(System.String,System.Boolean)">
+	<summary>
+ Load dữ liệu vào bảng Table gồm tất cả các kỳ kế toán của Báo cáo
+ </summary>
+	<param name="sModuleID"></param>
+	<returns></returns>
+	<remarks>Khai báo 1 DataTable toàn cục của form để lấy hàm này</remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboPeriodReport(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String)">
+	<summary>
+ Load combo Kỳ kế toán mà trên màn hình có combo Đơn vị
+ </summary>
+	<param name="tdbc"></param>
+	<param name="dt">dt này được lấy từ hàm LoadTablePeriodReport để tại Form_load</param>
+	<param name="sDivisionID">Giá trị của combo Đơn vị trên màn hình</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboPeriodReport(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.Data.DataTable,System.String)">
+	<summary>
+ Load 2 combo Kỳ kế toán màn trên màn hình có combo Đơn vị
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<param name="dt"></param>
+	<param name="sDivisionID"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboPeriodReport(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.Data.DataTable,System.String)">
+	<summary>
+ Load 4 combo Kỳ kế toán màn trên màn hình có combo Đơn vị
+ </summary>
+	<param name="tdbcFrom1"></param>
+	<param name="tdbcTo1"></param>
+	<param name="tdbcFrom2"></param>
+	<param name="tdbcTo2"></param>
+	<param name="dt"></param>
+	<param name="sDivisionID"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTablePeriod(System.String)">
+	<summary>
+ Trả ra bảng dữ liệu cho Period ở Private
+ </summary>
+	<param name="sModuleID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboPeriodReport(C1.Win.C1List.C1Combo,System.String)">
+	<summary>
+ Load combo Kỳ kế toán mà trên màn hình không có combo Đơn vị
+ </summary>
+	<param name="tdbc"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboPeriodReport(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String)">
+	<summary>
+ Load 2 combo Kỳ kế toán mà trên màn hình không có combo Đơn vị
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<param name="sModuleID"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.LoadCboPeriodReport(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo,System.String)">
+	<summary>
+ Load 4 combo Kỳ kế toán mà trên màn hình không có combo Đơn vị
+ </summary>
+	<param name="tdbcFrom1"></param>
+	<param name="tdbcTo1"></param>
+	<param name="tdbcFrom2"></param>
+	<param name="tdbcTo2"></param>
+	<param name="sModuleID"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.Number(System.String)">
+	<summary>
+ Trả về Số Double
+ </summary>
+	<param name="Text">Chuỗi truyền vào</param>
+</member><member name="M:D02E0140.D99X0000.Number(System.Object)">
+	<summary>
+ Trả về Số Double
+ </summary>
+	<param name="Text">Chuỗi truyền vào</param>
+</member><member name="M:D02E0140.D99X0000.L3IsNumeric(System.String@)">
+	<summary>
+ Kiểm tra số hợp lệ không hợp lệ thì gán = 0 và Trả về False
+ </summary>
+	<param name="sValue">Giá trị truyền vào và trả ra</param>
+	<returns></returns>
+	<remarks>Nếu số không hợp lệ thì trả về =0</remarks>
+</member><member name="M:D02E0140.D99X0000.L3IsNumeric(System.String@,D02E0140.EnumDataType)">
+	<summary>
+ Kiểm tra số hợp lệ không hợp lệ thì gán = 0 và Trả về False
+ </summary>
+	<param name="sValue">Giá trị truyền vào và trả ra</param>
+	<param name="_EnumDataType">Kiểu dữ liệu dùng để kiểm tra</param>
+	<returns></returns>
+	<remarks>Nếu số không hợp lệ thì trả về =0</remarks>
+</member><member name="M:D02E0140.D99X0000.L3DateValue(System.String)">
+	<summary>
+ Kiểm tra ngày trên lưới
+ </summary>
+	<param name="sDate">Giá trị ngày trên lưới</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ConvertDate(System.String)">
+	<summary>
+ Format dạng ngày trên lưới
+ </summary>
+	<param name="sDate"></param>
+	<returns>Chuỗi ngày dạng dd/MM/yyyy</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnTableFilter(System.Data.DataTable,System.String,System.Boolean)">
+	<summary>
+ Trả về một table sau khi đã được lọc
+ </summary>
+	<param name="dt">Bảng dữ liệu trước khi lọc</param>
+	<param name="sWhereClause">Điều kiện lọc (ví dụ:  ObjectTypeID = 'KH')</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnRowTable(System.Data.DataTable,System.String,System.String)">
+	<summary>
+ Trả về vị trí row của bảng sau khi tìm kiếm
+ </summary>
+	<param name="dt">Bảng dữ liệu</param>
+	<param name="sKeysField">Khóa của bảng</param>
+	<param name="sValue">Giá trị cần tìm</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnRowTable(System.Data.DataTable,System.String,System.String,System.String)">
+	<summary>
+ Trả về vị trí row của bảng sau khi tìm kiếm
+ </summary>
+	<param name="dt">Bảng dữ liệu</param>
+	<param name="sKeysField">Khóa của bảng</param>
+	<param name="sValue">Giá trị cần tìm</param>
+	<param name="sOrder">Thứ tự sắp xếp: ASC hay DESC </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ExistRecord(System.String)">
+	<summary>
+ Kiểm tra xem có tồn tại ít nhất một hàng trong lệnh SQL không
+ </summary>
+	<param name="SQL">Lệnh SQL cần kiểm tra</param>
+</member><member name="M:D02E0140.D99X0000.ReturnDataSet(System.String)">
+	<summary>
+ Trả về một DataSet từ chuỗi SQL truyền vào
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<returns>Trả về một DataSet nếu thực thi chuỗi SQL thành công, ngược lại sẽ báo lỗi bằng MsgErr</returns>
+</member><member name="M:D02E0140.D99X0000.ReturnDataSet(System.String,System.String[])">
+	<summary>
+ Trả về một DataSet từ chuỗi SQL truyền vào
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<param name="TableName">Mảng chứa tên các Table của DataSet</param>
+	<returns>Trả về một DataSet nếu thực thi chuỗi SQL thành công, ngược lại sẽ báo lỗi bằng MsgErr</returns>
+</member><member name="M:D02E0140.D99X0000.ReturnDataSet(System.String,System.String,System.Boolean)">
+	<summary>
+ Trả về một DataSet từ chuỗi SQL truyền vào
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<param name="MyMsgErr">Chuỗi thông báo khi có lỗi</param>
+	<param name="bUseClipboard">Có sử dụng Clipboard không</param>
+	<returns>Trả về một DataSet nếu thực thi chuỗi SQL thành công, ngược lại sẽ báo lỗi bằng MsgErr</returns>
+</member><member name="M:D02E0140.D99X0000.ReturnDataTable(System.String)">
+	<summary>
+ Trả về một DataTable từ chuỗi SQL
+ </summary>
+	<param name="SQL">Chuỗi SQL thực thực</param>
+	<returns>DataTable nếu thực thi thành công lệnh SQL, ngược lại trả về nothing</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnDataTable(System.String,System.String,System.Boolean)">
+	<summary>
+ Trả về một DataTable từ chuỗi SQL
+ </summary>
+	<param name="SQL">Chuỗi SQL thực thực</param>
+	<param name="MyMsgErr">Chuỗi thông báo khi có lỗi</param>
+	<param name="bUseClipboard">Có sử dụng Clipboard không</param>
+	<returns>DataTable nếu thực thi thành công lệnh SQL, ngược lại trả về nothing</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnScalar(System.String)">
+	<summary>
+ Thực thi câu lệnh SQL, trả về kết quả là hàng đâu tiên và cột đầu tiên theo dạng chuỗi
+ </summary>
+	<param name="SQL">Chuỗi SQL cần thực thi</param>
+	<returns>Trả về một chuỗi nếu thực thi lệnh SQL thành công, ngược lại sẽ hiển thị MsgErr</returns>
+	<remarks>Thường dùng để kiểm tra</remarks>
+</member><member name="M:D02E0140.D99X0000.ExecuteSQL(System.String)">
+	<summary>
+ Thực thi một chuỗi SQL có dùng Transaction
+ </summary>
+	<returns>Trả về True nếu thực thi chuỗi SQL thành công, ngược lại trả về False</returns>
+</member><member name="M:D02E0140.D99X0000.ExecuteSQL(System.String,System.String,System.Boolean)">
+	<summary>
+ Thực thi một chuỗi SQL có dùng Transaction
+ </summary>
+	<param name="strSQL">Chuỗi SQL để thực thi</param>
+	<param name="MyMsgErr">Chuỗi thông báo khi có lỗi</param>
+	<param name="bUseClipboard">Có sử dụng Clipboard không</param>
+	<returns>Trả về True nếu thực thi chuỗi SQL thành công, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ExecuteSQLNoTransaction(System.String)">
+	<summary>
+ Thực thi một chuỗi SQL không dùng Transaction
+ </summary>
+	<param name="strSQL">Chuỗi SQL cần thực thi</param>
+	<returns>Trả về True nếu thực thi chuỗi SQL thành công, ngược lại trả về False</returns>
+</member><member name="M:D02E0140.D99X0000.ExecuteSQLNoTransaction(System.String,System.String,System.Boolean)">
+	<summary>
+ Thực thi một chuỗi SQL không dùng Transaction
+ </summary>
+	<param name="strSQL">Chuỗi SQL để thực thi</param>
+	<param name="MyMsgErr">Chuỗi thông báo khi có lỗi</param>
+	<param name="bUseClipboard">Có sử dụng Clipboard không</param>
+	<returns>Trả về True nếu thực thi chuỗi SQL thành công, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.SQLString(System.String)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:D02E0140.D99X0000.SQLString(System.Object)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:D02E0140.D99X0000.SQLString(System.Boolean)">
+	<summary>
+ Thay các dấu ' thành '' dùng trong các lệnh SQL
+ </summary>
+	<param name="Bool">Giá trị bool, nếu True sẽ chuyển thành 1, ngược lại chuyển thành 0</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:D02E0140.D99X0000.SQLString(System.Object,System.Boolean)">
+	<summary>
+ Chuyển chuỗi sang UNICODE
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:D02E0140.D99X0000.SQLString(System.String,System.Boolean)">
+	<summary>
+ Chuyển chuỗi sang UNICODE
+ </summary>
+	<param name="Text">Chuỗi Text truyền vào</param>
+	<remarks>Chú ý là kết quả trả về có dấu ' ở hai đầu chuỗi</remarks>
+</member><member name="M:D02E0140.D99X0000.SQLString(C1.Win.C1List.C1Combo)">
+	<summary>
+ Khi lưu giá trị combo bổ sung ngày 19/07/2010
+ </summary>
+	<param name="combo">combo name</param>
+	<returns></returns>
+	<remarks>chặn khi giá trị nothing</remarks>
+</member><member name="M:D02E0140.D99X0000.SQLDecimal(System.String)">
+	<summary>
+ Trả về chuỗi kiểu số Decimal để lưu vào database
+ </summary>
+	<param name="Number"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.SQLDecimal(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu số Decimal để lưu vào database
+ </summary>
+	<param name="Number"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.SQLNumber(System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLNumber(System.Boolean)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLNumber(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLNumber(System.String,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+	<param name="StringFormat">Format số trước khi insert</param>
+</member><member name="M:D02E0140.D99X0000.SQLNumber(System.Object,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+	<param name="StringFormat">Format số trước khi insert</param>
+</member><member name="M:D02E0140.D99X0000.SQLMoney(System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLMoney(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLMoney(System.String,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLMoney(System.Object,System.String)">
+	<summary>
+ Trả về chuỗi kiểu số để lưu vào database
+ </summary>
+	<param name="Number">Số insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.ConvertMoney(System.String,System.String)">
+	<summary>
+ Trả về số dạng Double để tính toán
+ </summary>
+	<param name="Number">Số để tính toán</param>
+	<param name="sFormat">Chuỗi format</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ConvertMoney(System.Object,System.String)">
+	<summary>
+ Trả về số dạng Double để tính toán
+ </summary>
+	<param name="Number">Số để tính toán</param>
+	<param name="sFormat">Chuỗi format</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.DateSave(System.String)">
+	<summary>
+ Trả về chuỗi kiểu ngày để gọi sự kiện FilterChange của lưới ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.DateSave(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu ngày để gọi sự kiện FilterChange của lưới ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLDateSave(System.String)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.SQLDateSave(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLDateTimeSave(System.String)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy HH:mm:ss
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLDateTimeSave(System.Object)">
+	<summary>
+ Trả về chuỗi kiểu ngày để lưu vào database ở dạng MM/dd/yyyy HH:mm:ss
+ </summary>
+	<param name="Date">Ngày insert vào database</param>
+</member><member name="M:D02E0140.D99X0000.SQLDateShow(System.Object)">
+	<summary>
+ Trả về kiểu chuỗi ngày format theo dạng dd/MM/yyyy
+ </summary>
+	<param name="Date">Kiểu ngày truyền vào</param>
+</member><member name="M:D02E0140.D99X0000.SQLDateShow(System.String)">
+	<summary>
+ Trả về kiểu chuỗi ngày format theo dạng dd/MM/yyyy
+ </summary>
+	<param name="Date">Kiểu ngày truyền vào</param>
+</member><member name="M:D02E0140.D99X0000.LoadGridFind(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable,System.String)">
+	<summary>
+ Load lại dữ liệu cho lưới sau khi tìm kiếm
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="dtRoot">Bảng dữ liệu trước khi tìm kiếm</param>
+	<param name="sClauseFind">Điều kiện sau khi tìm kiếm</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ShowFindDialog(D02E0140.D99C1001,System.String,System.Boolean)">
+	<summary>
+ Hiển thị form tìm kiếm
+ </summary>
+	<param name="Finder">WithEvents của finder</param>
+	<param name="SQL">Chuỗi SQL đổ nguồn cho tìm kiếm</param>
+</member><member name="M:D02E0140.D99X0000.ShowFindDialogClient(D02E0140.D99C1001,System.String,System.Boolean)">
+	<summary>
+ Hiển thị form tìm kiếm
+ </summary>
+	<param name="Finder">WithEvents của finder</param>
+	<param name="SQL">Chuỗi SQL đổ nguồn cho tìm kiếm trên Client</param>
+</member><member name="M:D02E0140.D99X0000.ShowFindDialogClient(D02E0140.D99C1001,System.Data.DataTable,System.String,System.String,System.Boolean,System.String[])">
+	<summary>
+ Hiển thị form tìm kiếm theo table
+ </summary>
+	<param name="Finder">WithEvents của finder</param>
+	<param name="dt">table chứa caption của các cột tìm kiếm</param>
+	<param name="FormID">Form đang tìm kiếm (me.name)</param>
+	<param name="Mode">Master hay Detail</param>
+	<param name="bUseUnicode">Nhập liệu Unicode</param>
+	<param name="ArrFieldExclude">Tập các Field loại trừ cần truyền vào, VD: Dim ArrFieldExclude() As String = {"OrderNum"}</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ShowFindDialogClientServer(D02E0140.D99C1001,System.Data.DataTable,System.String,System.String,System.Boolean,System.String[])">
+	<summary>
+ Hiển thị form tìm kiếm theo table
+ </summary>
+	<param name="Finder">WithEvents của finder</param>
+	<param name="dt">table chứa caption của các cột tìm kiếm</param>
+	<param name="FormID">Form đang tìm kiếm (me.name)</param>
+	<param name="Mode">Master hay Detail</param>
+	<param name="bUseUnicode">Nhập liệu Unicode</param>
+	<param name="ArrFieldExclude">Tập các Field loại trừ cần truyền vào, VD: Dim ArrFieldExclude() As String = {"OrderNum"}</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ShowSysInfoDialog(System.String,System.String,System.String,System.String)">
+	<summary>
+ Hiển thị form Thông tin hệ thống theo dạng mới Online
+ </summary>
+	<param name="sCreateUserID"></param>
+	<param name="sCreateDate"></param>
+	<param name="sLastModifyUserID"></param>
+	<param name="sLastModifyDate"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.IsExistKeyBetween(System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra có tồn tại tập hợp key của bảng hay không ?
+ </summary>
+	<param name="TableName">Bảng cần kiểm tra</param>
+	<param name="Field">Khóa cần kiểm tra</param>
+	<param name="TextFrom">Giá trị cần kiểm tra</param>
+	<param name="TextTo">Giá trị cần kiểm tra</param>
+	<returns>Trả về True nếu có khóa, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.IsExistKey(System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra có tồn tại key của bảng hay không ?
+ </summary>
+	<param name="TableName">Bảng cần kiểm tra</param>
+	<param name="Field">Khóa cần kiểm tra</param>
+	<param name="Text">Giá trị cần kiểm tra</param>
+	<returns>Trả về True nếu có khóa, ngược lại trả về False</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.IsExistKey(System.String,System.String[],System.String[])">
+	<summary>
+ Kiểm tra có tồn tại key của bảng hay không ?
+ </summary>
+	<param name="TableName">Bảng cần kiểm tra</param>
+	<param name="Field">Mảng Khóa cần kiểm tra</param>
+	<param name="Text">Mảng Giá trị cần kiểm tra</param>
+	<returns>Trả về True nếu có khóa, ngược lại trả về False</returns>
+	<remarks>Dim FieldList () as string ={"Field1", "Field2"}; Dim TextList () as string ={"Text1", "Text2"} Gọi IsExistKey ("DxxTxxxx", FieldList,)</remarks>
+</member><member name="M:D02E0140.D99X0000.HotKeyF7(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32[])">
+	<summary>
+ Nhấn F7 trên lưới để copy ô trên xuống ô dưới cho nhiều cột có liên quan
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="iColumns">Tập cột cần truyền vào, VD: Dim iColumns() As Integer = {COL_ObjectName, COL_ObjectAddress}</param>
+	<remarks>Nhấn F7 tại cột ObjectID thì gọi HotKeyF7 (tdbg, iColumns)</remarks>
+</member><member name="M:D02E0140.D99X0000.HotKeyF8(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32[])">
+	<summary>
+ Nhấn F8 trên lưới để copy dòng trên xuống dòng dưới tính từ phải qua, TRỪ những dòng trong tập hợp iColExclude
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="iColExclude">Tập cột loại trừ cần truyền vào, VD: Dim iColExclude() As Integer = {COL_TransID, COL_VoucherID}</param>
+	<remarks>Nhấn F8 thì gọi HotKeyF8 (tdbg, iColExclude)</remarks>
+</member><member name="M:D02E0140.D99X0000.HotKeyF11(System.Windows.Forms.Form,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32)">
+	<summary>
+ Nhấn F11 trên lưới: Nhấn lần lẻ thì con trỏ nhảy đến lưới, lần chẳn con trỏ nhảy từ lưới về control trước đó
+ </summary>
+	<param name="frm">Form cần làm phím nóng, gán là Me </param>
+	<param name="c1Grid">Lưới C1</param>
+	<remarks>Tùy từng trường hợp MarqueeStyle</remarks>
+</member><member name="M:D02E0140.D99X0000.HotKeyEnterGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Windows.Forms.KeyEventArgs,System.Int32)">
+	<summary>
+ Nhấn phím Enter ở cột cuối cùng trên lưới thì nó sẽ nhảy xuống dòng kế tiếp
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="nFirstCol">Cột đầu tiên Focus tới</param>
+	<param name="e"></param>
+	<param name="iSplitFocus">vị trí của split cần Focus</param>
+	<remarks>Gọi hàm tại sự kiện KeyDown của lưới</remarks>
+  Cách gọi :
+ If e.KeyCode = Keys.Enter Then            
+        If tdbg2.Col = iLastCol Then  HotKeyEnterGrid(tdbg, COL_VoucherNum, e)
+        Exit Sub
+ End If
+ Biến iLastCol = CountCol(tdbg, tdbg.Splits.Count - 1) được gọi tại
+ Form_Load đối với những lưới không có nhiều cột (không có nút nhấn để bật tắt các cột)
+ Sự kiện Click của nút đối với những lưới có nhiều cột (có nút nhấn để bật tắt các cột)
+ Lưu ý: đối với những lưới có ít cột mà các cột này không động thì gán chết cột cuối cùng cần hiển thị iLastCol = COL_Disabled
+
+</member><member name="M:D02E0140.D99X0000.HotKeyShiftInsert(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ (BỎ) Nhấn phím Shift+Insert ở trên lưới thì sẽ chèn thêm 1 dòng mới vào vị trí con trỏ đang đứng 
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="SplitIndex"></param>
+	<param name="ColFirst"></param>
+	<param name="ColumnCount">Tổng số cột của lưới</param>
+	<remarks>Khai báo 1 biến Dim bAddNew As Boolean=False ở đầu form. Gọi hàm tại sự kiện KeyDown của lưới, đặt biến bAddNew =True  trước hàm HotKeyShiftInsert và viết thêm thông tin tại sự kiện RowColChange như sau:</remarks>
+     If bAddNew =True And c1Grid.AddNewMode = C1.Win.C1TrueDBGrid.AddNewModeEnum.AddNewCurrent Then
+     bAddNew=False         
+     c1Grid.Columns(COL_VoucherNum).Text = "" ' Gán 1 cột bất kỳ ="" cho lưới
+     End If
+
+</member><member name="M:D02E0140.D99X0000.HotKeyShiftInsert(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+  Nhấn phím Shift+Insert ở trên lưới thì sẽ chèn thêm 1 dòng mới vào vị trí con trỏ đang đứng (hàm  mới)
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="COL_OrderNum">Cột STT trên lưới (nếu có)</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.HotKeyDownGrid(System.Windows.Forms.KeyEventArgs,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.String)">
+	<summary>
+ Nhấn phím Ctrl+Insert: Thêm dòng mới
+ Nhấn phím Ctrl+Delete: Xóa dòng hiện tại
+ Nhấn phím Ctrl+Home: Con trỏ nhảy đến cột nhập liệu đầu tiên trên cùng 1 dòng
+ Nhấn phím Ctrl+End: Con trỏ nhảy đến cột nhập liệu cuối cùng trên cùng 1 dòng
+ Nhấn phím Ctrl+PageUp: Con trỏ nhảy đến dòng đầu tiên trên cùng 1 cột
+ Nhấn phím Ctrl+PageDown: Con trỏ nhảy đến dòng cuối cùng trên cùng 1 cột
+ Nhấn phím Ctrl+Right: Con trỏ nhảy đến cột đầu tiên của split liền sau
+ Nhấn phím Ctrl+Left: Con trỏ nhảy đến cột đầu tiên của split liền trước
+ Nhấn phím Ctrl+D: Copy diễn giải Master xuống Detail
+ </summary>
+	<param name="e"></param>
+	<param name="c1Grid"></param>
+	<param name="ColFirst"></param>
+	<param name="SplitFirst"></param>
+	<param name="SplitLast"></param>
+	<param name="ColFocusKeyHome"></param>
+	<param name="ColFocusKeyLeft"></param>
+	<param name="ColFocusKeyRight"></param>
+	<param name="ColDescription"></param>
+	<param name="ValueDescription"></param>
+	<remarks>Gọi hàm tại sự kiện KeyDown của lưới </remarks>
+</member><member name="M:D02E0140.D99X0000.CountCol(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+ Trả về cột cuối cùng có hiển thị
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="Split"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.UseEnterAsTab(System.Windows.Forms.Form,System.Boolean)">
+	<summary>
+ Khi gõ phím Enter cũng giống như phím Tab
+ </summary>
+	<param name="frm"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckKeyPress(System.Char,System.Boolean)">
+	<summary>
+ Kiểm tra khi nhấn trên FilterBar của cột checkBox và STT (tăng tự động client)
+ </summary>
+	<param name="KeyChar">Ký tự cần kiểm tra</param>
+	<param name="bOrderNum">Optional cột STT. Mặc định là False</param>
+	<returns>Trả về False nếu phím nhấn hợp lệ, ngược lại trả về True</returns>
+	<remarks>bOrderNum = FALSE : kiểm tra cột CheckBox. Ngược lại là cột STT</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckKeyPress(System.Char,D02E0140.EnumKey,System.String)">
+	<summary>
+ Kiểm tra phím nhấn
+ </summary>
+	<param name="KeyChar">Ký tự cần kiểm tra</param>
+	<param name="TypeCheck">Loại dữ liệu cần kiểm tra</param>
+	<param name="CheckString">Chuỗi cần kiểm tra. Chỉ chấp nhận nếu tham số đầu tiên là Custom</param>
+	<returns>Trả về True nếu phím nhấn hợp lệ, ngược lại trả về False</returns>
+</member><member name="M:D02E0140.D99X0000.FormKeyEnter(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Nhấn phím enter sẽ được hiểu bằng phím Tab
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.FormKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ (BỎ) Nhấn phím enter sẽ được hiểu bằng phím Tab
+ </summary>
+	<remarks>Chỉ có tác dụng trên: TextBox, CheckBox, C1Combo</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdTextBox(System.Windows.Forms.TextBox@,System.Int32,System.Boolean)">
+	<summary>
+ Kiểm tra TextBox Nhập Mã/Công thức
+ </summary>
+	<param name="txtID">Control cần kiểm tra</param>
+	<param name="iLength">Chiều dài nhập liệu</param>
+	<param name="bFormula">Theo kiểu công thức (Default: False - cho Mã)</param>
+	<remarks>Cho một textbox, đối số bFormula : Kiểu kiểm tra là Mã hay Công thức</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdTextBox(System.Windows.Forms.TextBox[]@,System.Int32,System.Boolean)">
+	<summary>
+ Kiểm tra nhiều TextBox Nhập Mã/Công thức
+ </summary>
+	<param name="txtID">Control cần kiểm tra</param>
+	<param name="iLength">Chiều dài nhập liệu</param>
+	<param name="bFormula">Theo kiểu công thức (Default: False - cho Mã)</param>
+	<remarks>Cho một textbox, đối số bFormula : Kiểu kiểm tra là Mã hay Công thức</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdTDBGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32,System.Boolean)">
+	<summary>
+ Kiểm tra cột Mã trên lưới dạng Integer
+ </summary>
+	<param name="tdbg">grid name</param>
+	<param name="iCol">col id</param>
+	<param name="bFormula">Enter ID or Formula (Default : False - ID)</param>
+	<remarks>Put DxxFxxxx_Load events (Exp: CheckIdTDBGrid(tdbg, COL_???, ???))</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdTDBGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String,System.Boolean)">
+	<summary>
+ Kiểm tra cột Mã trên lưới dạng String
+ </summary>
+	<param name="tdbg">grid name</param>
+	<param name="iCol">col id</param>
+	<param name="bFormula">Enter ID or Formula (Default : False - ID)</param>
+	<remarks>Put DxxFxxxx_Load events (Exp: CheckIdTDBGrid(tdbg, COL_???, ???))</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdTDBGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32[],System.Boolean)">
+	<summary>
+ Kiểm tra nhiều cột Mã trên lưới dạng Integer
+ </summary>
+	<param name="tdbg">grid name</param>
+	<param name="iCol">col id</param>
+	<param name="bFormula">Enter ID or Formula (Default : False - ID)</param>
+	<remarks>Put DxxFxxxx_Load events with arrCol is Integer(Exp: CheckIdTDBGrid(tdbg, arrCol, ???))</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdTDBGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String[],System.Boolean)">
+	<summary>
+ Tạo cột Mã trên lưới
+ </summary>
+	<param name="tdbg">grid name</param>
+	<param name="iCol">col id</param>
+	<param name="bFormula">Enter ID or Formula (Default : False - ID)</param>
+	<remarks>Put DxxFxxxx_Load events with arrCol is String(Exp: CheckIdTDBGrid(tdbg, arrCol, ???))</remarks>
+</member><member name="M:D02E0140.D99X0000.L3IsID(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32)">
+	<summary>
+ Kiểm tra Mã nhập vào lưới
+ </summary>
+	<param name="tdbg">grid name</param>
+	<param name="iCol">col id</param>
+	<returns>True/False</returns>
+	<remarks>Put tdbg_BeforeColUpdate events (Exp: e.Cancel = L3IsID(tdbg, e.ColIndex, ???))</remarks>
+</member><member name="M:D02E0140.D99X0000.L3IsFormula(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32)">
+	<summary>
+ Kiểm tra Công thức nhập vào lưới
+ </summary>
+	<param name="tdbg">grid name</param>
+	<param name="iCol">col id</param>
+	<returns>True/False</returns>
+	<remarks>Put tdbg_BeforeColUpdate events (Exp: e.Cancel = L3IsID(tdbg, e.ColIndex, ???))</remarks>
+</member><member name="M:D02E0140.D99X0000.ChangePositionIndexVNI(System.String,System.Int32@,System.Int32@)">
+	<summary>
+ Thay đổi vị trí Select của chuỗi Vni
+ </summary>
+	<param name="str"></param>
+	<param name="posFrom">vị trí bắt đầu</param>
+	<param name="posTo">Số ký tự được Select</param>
+	<remarks>Không cần kiểm tra khi Unicode</remarks>
+</member><member name="M:D02E0140.D99X0000.IndexIdCharactor(System.String)">
+	<summary>
+ Kiểm tra Mã hợp lệ 
+ </summary>
+	<param name="str">Chuỗi kiểm tra</param>
+	<returns>Vị trí ký tự vi phạm</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckIdCharactor(System.String)">
+	<summary>
+ Kiểm tra Mã hợp lệ 
+ </summary>
+	<param name="str">Chuỗi kiểm tra</param>
+	<returns>Vị trí ký tự vi phạm</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CopyColumnArr(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32[])">
+	<summary>
+ Copy nhiều cột liên quan nhưng không liên tục
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="iColumns">Tập cột liên quan cần copy</param>
+	<remarks>Gọi hàm tại sự kiên tdbg_HeadClick như sau:</remarks>
+ Case COL_NewSalaryLevelID2 
+ Dim iCols() As Integer = {COL_NewSaCoefficient2, COL_NewSaCoefficient22, COL_NewSaCoefficient23, COL_NewSaCoefficient24, COL_NewSaCoefficient25}
+ CopyColumnArr(tdbg, tdbg.Col, iCols()) 
+
+</member><member name="M:D02E0140.D99X0000.CopyColumns(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.String,System.Int32)">
+	<summary>
+ Copy giá trị trong 1 cột (khi nhấn Head_Click)
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="sValue">Giá trị cần copy</param>
+	<param name="RowCopy">Dòng đang copy</param>
+	<remarks>Chỉ dùng copy những cột dữ liệu không liên quan đến các cột khác, copy cả giá trị ''</remarks>
+</member><member name="M:D02E0140.D99X0000.CopyColumns(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32,System.String)">
+	<summary>
+ Copy giá trị trong 1 cột có liên quan đến các cột kế nó (khi nhấn Head_Click)
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="RowCopy">Dòng cần copy</param>
+	<param name="ColumnCount">Số cột liên quan khi cần copy</param>
+	<remarks>Chỉ copy những cột ở vị trí liên tục nhau</remarks>
+</member><member name="M:D02E0140.D99X0000.CopyColumnsArr(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Int32[])">
+	<summary>
+ Copy giá trị trong 1 cột (khi nhấn Head_Click và nhấn Ctrl + S)
+ </summary>
+	<param name="c1Grid">Lưới</param>
+	<param name="ColCopy">Cột cần copy</param>
+	<param name="COL_Choose">Cột kiểm tra được chọn thì copy</param>
+	<param name="iColRelative">Số cột liên quan khi cần copy</param>
+	<remarks>Luôn gán AllowSort = False</remarks>
+</member><member name="M:D02E0140.D99X0000.L3HeadClick(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.Boolean@)">
+	<summary>
+ HeadClick trên cột Chọn kiểu String
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="COL_Choose">cột chọn kiểu string</param>
+	<param name="bSelected"> bSelected tự định nghĩa trong từng form; Giá trị mặc định phụ thuộc khi load lưới. Thông thường là False</param>
+	<remarks>Trả về bSelected và Luôn gán AllowSort = False</remarks>
+</member><member name="M:D02E0140.D99X0000.L3HeadClick(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Boolean@)">
+	<summary>
+ HeadClick trên cột Chọn kiểu Integer
+ </summary>
+	<param name="tdbg">Lưới</param>
+	<param name="COL_Choose">cột chọn kiểu Integer</param>
+	<param name="bSelected"> bSelected tự định nghĩa trong từng form; Giá trị mặc định phụ thuộc khi load lưới. Thông thường là False</param>
+	<remarks>Trả về bSelected</remarks>
+</member><member name="M:D02E0140.D99X0000.UpdateTDBGOrderNum(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Boolean)">
+	<summary>
+ Tính lại STT trên lưới
+ </summary>
+	<param name="c1Grid">lưới cần</param>
+	<param name="COL_OrderNum">tên cột thứ tự</param>
+	<param name="col_Value">tên cột đang đứng để tăng số thứ tự</param>
+	<param name="bUseFilterBar"> = True khi lưới có Filter Bar</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ResetSplitDividerSize(C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Reset thanh kẻ Split của lưới C1 về 0
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+</member><member name="M:D02E0140.D99X0000.ResetColorGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32,System.Int32)">
+	<summary>
+ Set màu cho và Footer cho lưới Danh mục
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="FisrtSplits">Split đầu tiên của lưới</param>
+	<param name="LastSplits">Split cuối cùng của lưới</param>
+	<remarks>Chỉ dùng cho các lưới dạng Danh mục</remarks>
+</member><member name="M:D02E0140.D99X0000.ResetFooterGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32,System.Int32)">
+	<summary>
+ Set Footer cho lưới
+ </summary>
+	<param name="c1Grid">Lưới C1</param>
+	<param name="FisrtSplits">Split đầu tiên của lưới</param>
+	<param name="LastSplits">Split cuối cùng của lưới</param>
+	<remarks>Chủ yếu dùng cho các lưới dạng Nhập liệu</remarks>
+</member><member name="M:D02E0140.D99X0000.LoadUserKey">
+	<summary>
+ Lấy chuỗi người dùng để sinh IGE
+ </summary>
+</member><member name="M:D02E0140.D99X0000.InsertVoucherNoD91T9111(System.String,System.String,System.String)">
+	<summary>
+ Insert dữ liệu vào bảng D91T9111 cho trường hợp số phiếu KHÔNG sinh tự động
+ </summary>
+	<param name="sVoucherNo">Số phiếu hiện tại</param>
+	<param name="sVoucherTableName">Bảng nghiệp vụ chứa số phiếu</param>
+	<param name="sVoucherIGE">Giá trị khóa chính của bảng nghiệp vụ</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.DeleteVoucherNoD91T9111(System.String,System.String)">
+	<summary>
+ Xóa số phiếu của bảng D91T9111, Gọi tại form Truy vấn sau khi xóa thành công (Xóa Phiếu)
+ </summary>
+	<param name="sVoucherNo">Số phiếu khi xóa</param>
+	<param name="sVoucherTableName">Bảng nghiệp vụ chứa số phiếu</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.DeleteVoucherNoD91T9111(System.String,System.String,System.String)">
+	<summary>
+ Xóa số phiếu của bảng D91T9111, Gọi tại form Truy vấn sau khi xóa thành công (Xóa Hóa đơn)
+ </summary>
+	<param name="sVoucherNo">Số phiếu khi xóa</param>
+	<param name="sVoucherTableName">Bảng nghiệp vụ chứa số phiếu</param>
+	<param name="FieldNameVoucherNo"> FieldName của Số phiếu (VD: VoucherNo)</param>
+	<remarks>Áp dụng cho TH 1 phiếu có nhiều hóa đơn</remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNoNew(C1.Win.C1List.C1Combo,System.String,System.String)">
+	<summary>
+ Sinh số phiếu theo kiểu mới
+ </summary>
+	<param name="c1Combo">Combo số phiếu</param>
+	<param name="sVoucherTableName">Bảng nghiệp vụ chứa số phiếu</param>
+	<param name="sVoucherIGE">Giá trị khóa chính của bảng nghiệp vụ</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNoNew(System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.String)">
+	<summary>
+ Sinh số phiếu theo kiểu mới
+ </summary>
+	<param name="sVoucherTableName">Bảng nghiệp vụ chứa số phiếu</param>
+	<param name="sVoucherIGE">Giá trị khóa chính của bảng nghiệp vụ</param>
+	<param name="S1Type"></param>
+	<param name="s1"></param>
+	<param name="S2Type"></param>
+	<param name="S2"></param>
+	<param name="S3Type"></param>
+	<param name="S3"></param>
+	<param name="OutputOrder"></param>
+	<param name="OutputLength"></param>
+	<param name="Seperator"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckDuplicateVoucherNoNew(System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra trùng số phiếu theo kiểu mới
+ </summary>
+	<param name="ModuleID">Tên module: Dxx</param>
+	<param name="TableName">Tên bảng để lưu Số phiếu</param>
+	<param name="VoucherID">Giá trị của Khóa chính trong bảng lưu Số phiếu</param>
+	<param name="VoucherNo">Số phiếu</param>
+	<returns>True: vi phạm, không làm gì cả</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNo(C1.Win.C1List.C1Combo,System.Boolean)">
+	<summary>
+ Tạo IGE cho số phiếu theo chuẩn của C1Combo VoucherType
+ </summary>
+	<param name="c1Combo">C1Combo theo chuẩn</param>
+	<param name="FlagSave">Lưu lại số phiếu không?</param>
+	<returns>Số phiếu cần tạo</returns>
+	<remarks>Chú ý C1Combo chuẩn được thiết kế giống module D28</remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNo(C1.Win.C1List.C1Combo,System.Boolean,System.String)">
+	<summary>
+ Tạo IGE cho số phiếu theo chuẩn của C1Combo VoucherType
+ </summary>
+	<param name="c1Combo">C1Combo theo chuẩn</param>
+	<param name="FlagSave">Lưu lại số phiếu không?</param>
+	<param name="TableName">Table cần lưu trữ</param>
+	<returns>Số phiếu cần tạo</returns>
+	<remarks>Chú ý C1Combo chuẩn được thiết kế giống module D28</remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNo(System.String,System.String,System.String,System.String,System.String,System.String,D99D0041.OutOrderEnum,System.Int32,System.String,System.Boolean)">
+	<summary>
+ Tạo IGE cho số phiếu theo chuẩn của C1Combo VoucherType
+ </summary>
+	<param name="S1Type">Truyền S1Type theo chuẩn</param>
+	<param name="S1">Truyền chuỗi S1</param>
+	<param name="S2Type">Truyền S2Type theo chuẩn</param>
+	<param name="S2">Truyền chuỗi S2</param>
+	<param name="S3Type">Truyền S3Type theo chuẩn</param>
+	<param name="S3">Truyền chuỗi S3</param>
+	<param name="OutputOrder">Thứ tự hiện thị</param>
+	<param name="OutputLength">Chiều dài</param>
+	<param name="Separator">Dấu phân cách</param>
+	<param name="FlagSave">Có lưu key không ?</param>
+	<returns>Trả về IGE VoucherNo theo chuẩn Lemon3</returns>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNo(System.String,System.String,System.String,System.String,System.String,System.String,D99D0041.OutOrderEnum,System.Int32,System.String,System.Boolean,System.String)">
+	<summary>
+ Tạo IGE cho số phiếu theo chuẩn của C1Combo VoucherType
+ </summary>
+	<param name="S1Type">Truyền S1Type theo chuẩn</param>
+	<param name="S1">Truyền chuỗi S1</param>
+	<param name="S2Type">Truyền S2Type theo chuẩn</param>
+	<param name="S2">Truyền chuỗi S2</param>
+	<param name="S3Type">Truyền S3Type theo chuẩn</param>
+	<param name="S3">Truyền chuỗi S3</param>
+	<param name="OutputOrder">Thứ tự hiện thị</param>
+	<param name="OutputLength">Chiều dài</param>
+	<param name="Separator">Dấu phân cách</param>
+	<param name="FlagSave">Có lưu key không ?</param>
+	<param name="TableName">Tên table lưu xuống</param>
+	<returns>Trả về IGE VoucherNo theo chuẩn Lemon3</returns>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNo(System.String,System.String,System.String,D99D0041.OutOrderEnum,System.Int32,System.String,System.Boolean,System.String)">
+	<summary>
+ Tạo IGE cho số phiếu theo chuẩn của C1Combo VoucherType
+ </summary>
+	<param name="S1">Truyền chuỗi S1</param>
+	<param name="S2">Truyền chuỗi S2</param>
+	<param name="S3">Truyền chuỗi S3</param>
+	<param name="OutputOrder">Thứ tự hiện thị</param>
+	<param name="OutputLength">Chiều dài</param>
+	<param name="Separator">Dấu phân cách</param>
+	<param name="FlagSave">Có lưu key không ?</param>
+	<param name="TableName">Tên table lưu xuống</param>
+	<returns>Trả về IGE VoucherNo theo chuẩn Lemon3</returns>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNo(System.String,System.String,System.String,D99D0041.OutOrderEnum,System.Int32,System.String,System.Boolean)">
+	<summary>
+ Tạo IGE cho số phiếu theo chuẩn của C1Combo VoucherType
+ </summary>
+	<param name="S1">Truyền chuỗi S1</param>
+	<param name="S2">Truyền chuỗi S2</param>
+	<param name="S3">Truyền chuỗi S3</param>
+	<param name="OutputOrder">Thứ tự hiện thị</param>
+	<param name="OutputLength">Chiều dài</param>
+	<param name="Separator">Dấu phân cách</param>
+	<param name="FlagSave">Có lưu key không ?</param>
+	<returns>Trả về IGE VoucherNo theo chuẩn Lemon3</returns>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNosDetail(C1.Win.C1List.C1Combo,System.String,System.Int32,System.String,System.String)">
+	<summary>
+ KHÔNG có textbox Số phiếu: Sinh số phiếu tự động trên lưới khi lưu, Số phiếu sinh = Số dòng trên lưới và có kiểm tra trùng phiếu
+ (sinh theo table D91T0001)
+ </summary>
+	<param name="c1Combo"></param>
+	<param name="OldVoucherNo"></param>
+	<param name="NumberIGE"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNosDetail(C1.Win.C1List.C1Combo,System.String,System.Int32,System.String,System.String,System.String)">
+	<summary>
+ CÓ textbox Số phiếu: Sinh số phiếu tự động trên lưới khi lưu, Số phiếu sinh = Số dòng trên lưới và có kiểm tra trùng phiếu
+ (sinh theo table D91T0001)
+ </summary>
+	<param name="c1Combo"></param>
+	<param name="OldVoucherNo"></param>
+	<param name="NumberIGE"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CreateIGEVoucherNosDetail(C1.Win.C1List.C1Combo,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+	<summary>
+ CÓ textbox Số phiếu: Sinh số phiếu tự động trên lưới khi lưu, Số phiếu sinh = Số dòng trên lưới và có kiểm tra trùng phiếu
+ (sinh theo table bất kỳ truyền vào)
+ </summary>
+	<param name="c1Combo">Combo Loại phiếu load theo chuẩn</param>
+	<param name="OldVoucherNo">Số phiếu cũ</param>
+	<param name="NumberIGE">Số dòng cần sinh Số phiếu</param>
+	<param name="TableKey">Table nghiệp vụ chứa số phiếu</param>
+	<param name="FieldIDKey">Khóa chính của bảng nghiệp vụ, để kiểm tra trùng phiếu</param>
+	<param name="TableVoucherNo">Table sinh số phiếu</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.GetNewVoucherNo(C1.Win.C1List.C1Combo,System.Windows.Forms.TextBox)">
+	<summary>
+ Tạo chỉ số tự động mới
+ </summary>
+	<param name="c1Combo">Combo tdbcVoucherTypeID theo chuẩn</param>
+	<param name="txtVoucherNo">Textbox VoucherNo truyền vào</param>
+	<remarks>Chú ý: phải định nghĩa theo chuẩn của combo tdbcVoucherTypeID</remarks>
+</member><member name="M:D02E0140.D99X0000.GetNewVoucherNo(C1.Win.C1List.C1Combo,System.Windows.Forms.TextBox,System.String)">
+	<summary>
+ Tạo chỉ số tự động mới
+ </summary>
+	<param name="c1Combo">Combo tdbcVoucherTypeID theo chuẩn</param>
+	<param name="txtVoucherNo">Textbox VoucherNo truyền vào</param>
+	<remarks>Chú ý: phải định nghĩa theo chuẩn của combo tdbcVoucherTypeID</remarks>
+</member><member name="M:D02E0140.D99X0000.GetNewVoucherNo(System.Windows.Forms.TextBox,System.String,System.String,System.String,D99D0041.OutOrderEnum,System.Int32,System.String)">
+	<summary>
+ Tạo chỉ số tự động mới
+ </summary>
+	<param name="txtVoucherNo">Textbox cần sinh tự động</param>
+	<param name="S1">Chuỗi 1</param>
+	<param name="S2">Chuỗi 2</param>
+	<param name="S3">Chuỗi 3</param>
+	<param name="OutputOrder"></param>
+	<param name="OutputLength"></param>
+	<param name="Separator"></param>
+	<remarks>Tạo theo chuỗi mới truyền vào</remarks>
+</member><member name="M:D02E0140.D99X0000.SaveNewLastKey(C1.Win.C1List.C1Combo)">
+	<summary>
+ Lưu Khóa tự động khi sinh phiếu xuống database
+ </summary>
+	<param name="c1Combo"></param>
+	<remarks>Chú ý: biến gnNewLastKey</remarks>
+</member><member name="M:D02E0140.D99X0000.SaveNewLastKey(C1.Win.C1List.C1Combo,System.String)">
+	<summary>
+ Lưu Khóa tự động khi sinh phiếu xuống database
+ </summary>
+	<param name="c1Combo"></param>
+	<remarks>Chú ý: biến gnNewLastKey</remarks>
+</member><member name="M:D02E0140.D99X0000.SaveNewLastKey(System.String,System.String,System.String)">
+	<summary>
+ Lưu Khóa tự động khi sinh phiếu xuống database
+ </summary>
+	<param name="S1"></param>
+	<param name="S2"></param>
+	<param name="S3"></param>
+	<remarks>Chú ý: biến gnNewLastKey</remarks>
+</member><member name="M:D02E0140.D99X0000.SaveNewLastKey(System.String,System.String,System.String,System.String)">
+	<summary>
+ Lưu Khóa tự động khi sinh phiếu xuống database
+ </summary>
+	<param name="S1"></param>
+	<param name="S2"></param>
+	<param name="S3"></param>
+	<param name="sTableName"> Bảng mặc đinh lưu D91T0001</param>
+	<remarks>Chú ý: biến gnNewLastKey</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckDropdownInList(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String)">
+	<summary>
+ Kiểm tra giá trị có trong Dropdown
+ </summary>
+	<param name="tdbDD"></param>
+	<param name="sValue"></param>
+	<returns>True: có trong đanh sách</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckDropdownInList(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.String)">
+	<summary>
+ Kiểm tra giá trị có trong Dropdown có truyền KeysField
+ </summary>
+	<param name="tdbDD"></param>
+	<param name="sKeysField"></param>
+	<param name="sValue"></param>
+	<returns>True: có trong đanh sách</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckVoucherDateInPeriod(System.String)">
+	<summary>
+ Kiểm tra Ngày phiếu có phù hợp với Kỳ kế toán hiện tại không
+ </summary>
+	<param name="VoucherDate">Ngày phiếu</param>
+	<returns>False: vi phạm, không làm gì cả </returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckVoucherDateWithGetDate(System.String,System.String)">
+	<summary>
+ Kiểm tra có quyền nhập Ngày phiếu lớn hơn Ngày GetDate không?
+ </summary>
+	<param name="VoucherDate">Ngày phiếu</param>
+	<param name="FormPermission">Form phân quyền là DxxF5704</param>
+	<returns>False: vi phạm, không làm gì cả </returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckDuplicateVoucherNo(System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra trùng số phiếu
+ </summary>
+	<param name="ModuleID">Tên module: Dxx</param>
+	<param name="TableName">Tên bảng để lưu Số phiếu</param>
+	<param name="VoucherID">Giá trị của Khóa chính trong bảng lưu Số phiếu</param>
+	<param name="VoucherNo">Số phiếu</param>
+	<returns>True: vi phạm, không làm gì cả</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckStore(System.String,System.Boolean)">
+	<summary>
+ Kiểm tra dữ liệu bằng Store
+ </summary>
+	<param name="SQL">Store cần kiểm tra</param>
+	<returns>Trả về True nếu kiểm tra không có lỗi, ngược lại trả về False</returns>
+	<remarks>Chú ý: Kết quả trả ra của Store phải có dạng là 1 hàng và 2 cột là Status và Message</remarks>
+</member><member name="M:D02E0140.D99X0000.CheckMenu(System.String,C1.Win.C1Command.C1CommandHolder,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Kiểm tra phân quyền cho C1ContextMenu và lưới C1Grid
+ </summary>
+	<param name="FormName">Tên form cần phân quyền</param>
+	<param name="C1CommandHolder">C1CommandHolder lưu trữ các C1Command</param>
+	<param name="GridRowCount">Số dòng của lưới. Truyền thông số như sau: tdbg.Splits(Split0).Rows.Count</param>
+	<param name="UsedFind">Truyền biến toàn cục gbEnabledUseFind</param>
+	<param name="CheckCloseBook">Có kiểm tra khóa sổ không ?</param>
+	<remarks>Hàm này chỉ có tác dụng nếu các C1ContextMenu có tên lần lượt như sau: 
+ mnuView, mnuAdd, mnuEdit, mnuDelete, mnuFind, mnuListAll, mnuSysInfo, mnuPrint
+ </remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnPermission(System.String)">
+	<summary>
+ Trả về là quyền của màn hình truyền vào
+ </summary>
+	<param name="FormName">Màn hình cần lấy quyền</param>
+</member><member name="M:D02E0140.D99X0000.CheckAnaError(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown)">
+	<summary>
+ Bỏ không dùng nữa: Kiểm tra khoản mục theo D91
+ </summary>
+	<param name="c1Grid">Lưới cần kiểm tra</param>
+	<param name="COL_Ana01ID">Cột Ana01ID của lưới</param>
+	<param name="Split">Kiểm tra ở split thứ mấy</param>
+	<param name="tdbdAna01ID">Truyền Dropdown tdbdAna01ID</param>
+	<param name="tdbdAna02ID">Truyền Dropdown tdbdAna02ID</param>
+	<param name="tdbdAna03ID">Truyền Dropdown tdbdAna03ID</param>
+	<param name="tdbdAna04ID">Truyền Dropdown tdbdAna04ID</param>
+	<param name="tdbdAna05ID">Truyền Dropdown tdbdAna05ID</param>
+	<param name="tdbdAna06ID">Truyền Dropdown tdbdAna06ID</param>
+	<param name="tdbdAna07ID">Truyền Dropdown tdbdAna07ID</param>
+	<param name="tdbdAna08ID">Truyền Dropdown tdbdAna08ID</param>
+	<param name="tdbdAna09ID">Truyền Dropdown tdbdAna09ID</param>
+	<param name="tdbdAna10ID">Truyền Dropdown tdbdAna10ID</param>
+	<returns>Trả kết quả về True nếu kiểm tra 1 trong 10 khoản mục bị lỗi theo D91</returns>
+	<remarks>
+		<code>
+ If CheckAnaError(tdbg, COL_Ana01ID, SPLIT2, tdbdAna01ID, tdbdAna02ID, tdbdAna03ID, tdbdAna04ID, tdbdAna05ID, tdbdAna06ID, tdbdAna07ID, tdbdAna08ID, tdbdAna09ID, tdbdAna10ID) Then
+    Return False
+ End If
+ </code>
+	</remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTDBDropDownAna(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Boolean)">
+	<summary>
+ Hàm mới: Đổ nguồn cho 10 khoản mục kiểm tra KM nào có dùng thì đổ nguồn cho Dropdown
+ </summary>
+	<remarks>Truyền 10 khoản mục cần đổ nguồn vào</remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTDBDropDownAna(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Boolean)">
+	<summary>
+ Đổ nguồn cho 10 khoản mục
+ </summary>
+	<remarks>Truyền 10 khoản mục cần đổ nguồn vào</remarks>
+</member><member name="M:D02E0140.D99X0000.LoadTDBGridAnalysisCaption(System.String,C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Gán caption của 10 Khoản mục cho lưới
+ </summary>
+	<param name="tdbg">Lưới cần gán caption</param>
+	<param name="COL_Ana01ID">Cột bắt đầu</param>
+	<param name="Split">Split cần gán</param>
+	<param name="IsVisibleColumn">Visibled Column liền hay không ? dùng ở form danh mục</param>
+	<remarks>Columns.Tag chứa biến Boolean chỉ cột này có hiện thị không</remarks>
+</member><member name="M:D02E0140.D99X0000.RunAuditLogNewPeriod(System.String,System.String)">
+	<summary>
+ Ghi nhận Audit khi tạo kỳ 
+ </summary>
+	<param name="sModuleID">ModuleID: Truyền Dxx</param>
+	<param name="sNewPeriod">Kỳ mới được tạo</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.GetDateServer">
+	<summary>
+ Lấy giá trị hàm GetDate()của Server để truyền vào CreateDate cho trường hợp lưu chi tiết dưới lưới
+ </summary>
+	<remarks>Gọi tại sự kiện nút Lưu, trước khi tạo câu SQL để Insert</remarks>
+</member><member name="M:D02E0140.D99X0000.AskMsgBeforeClose">
+	<summary>
+ Message hỏi trước khi đóng màn hình có nút Lưu
+ </summary>
+	<returns></returns>
+	<remarks>Vào sự kiện FormClosing viết đoạn code sau </remarks>
+ If Not bKeyPress Then Exit Sub' Gán bKeyPress = True ở sự kiện Form_KeyPress
+ If _FormState = EnumFormState.FormEdit Then 
+If Not gbSavedOK Then 
+If Not AskMsgBeforeClose() Then e.Cancel = True : Exit Sub 
+End If 
+ElseIf _FormState = EnumFormState.FormAdd Then 
+If btnSave.Enabled Then 
+If Not AskMsgBeforeClose() Then e.Cancel = True : Exit Sub 
+End If 
+End If 
+
+</member><member name="M:D02E0140.D99X0000.ReturnNotesNumber(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Trả về số file Ghi chú
+ </summary>
+	<param name="TableName">Bảng của nghiệp vụ cần Ghi chú</param>
+	<param name="Key1ID">Giá trị của Khóa chính trong bảng (IGE)</param>
+	<param name="Key2ID">Giá trị của Khóa thứ 2</param>
+	<param name="Key3ID">Khóa thứ 3</param>
+	<param name="Key4ID">Khóa thứ 4</param>
+	<param name="Key5ID">Khóa thứ 5</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.ReturnAttachmentNumber(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Trả về số file Đính kèm
+ </summary>
+	<param name="TableName">Bảng của nghiệp vụ cần Đính kèm</param>
+	<param name="Key1ID">Giá trị của Khóa chính trong bảng (IGE)</param>
+	<param name="Key2ID">Giá trị của Khóa thứ 2</param>
+	<param name="Key3ID">Khóa thứ 3</param>
+	<param name="Key4ID">Khóa thứ 4</param>
+	<param name="Key5ID">Khóa thứ 5</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.MsgErr(System.String)">
+	<summary>
+ Hiển thị báo lỗi trong quá trình coding
+ </summary>
+	<param name="Text">Chuỗi báo lỗi</param>
+</member><member name="M:D02E0140.D99X0000.InsertZero(System.Int32)">
+	<summary>
+ Thêm các số 0 vào chuỗi format
+ </summary>
+	<param name="NumZero">Số cần tạo</param>
+	<returns>Các số không tương ứng và dấu chấm (nếu có)</returns>
+</member><member name="M:D02E0140.D99X0000.CheckValidPeriodFromTo(C1.Win.C1List.C1Combo,C1.Win.C1List.C1Combo)">
+	<summary>
+ Từ kỳ phải nhỏ hơn bằng Đến kỳ
+ </summary>
+	<param name="tdbcFrom"></param>
+	<param name="tdbcTo"></param>
+	<returns>True : Valid; False: Invalid</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckValidDateFromTo(C1.Win.C1Input.C1DateEdit,C1.Win.C1Input.C1DateEdit)">
+	<summary>
+ Từ ngày phải nhỏ hơn bằng Đến ngày
+ </summary>
+	<param name="c1dateFrom"></param>
+	<param name="c1dateTo"></param>
+	<returns>True : Valid; False: Invalid</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.GetFindServerToPrint(System.String,System.Text.StringBuilder)">
+	<summary>
+ Trả về chuỗi nối Tìm kiếm + Filter Server để In
+ </summary>
+	<param name="sFindServer">sFind</param>
+	<param name="sFilterServer">sFilterServer</param>
+	<returns>sFind + sFilterServer</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.SaveRunningExeSettings(System.String,System.String)">
+	<summary>
+ Lưu xuống Registry Exe hiện tại
+ </summary>
+	<param name="sCurrentExe">Exe hiện tại (ModuleD38)</param>
+	<param name="sChildExe">Exe con được gọi (EXECHILD)</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.DeleteRunningExeSettings(System.String)">
+	<summary>
+ Xóa nhánh Exe trong Registry
+ </summary>
+	<param name="sCurrentExe">exe đang gọi</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.KillChildProcess(System.String)">
+	<summary>
+ Đóng exe con liên quan exe đang gọi
+ </summary>
+	<param name="sCurrentExe"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.RemoveValueArray(System.String[],System.String)">
+	<summary>
+ Xóa phần tử trong Array
+ </summary>
+	<param name="arrSubKey">mảng cần xóa</param>
+	<param name="sValue">Giá trị cần xóa trong mảng</param>
+	<returns>Mảng sau khi xóa</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.AddValueArray(System.String[]@,System.String)">
+	<summary>
+ Thêm phần tử vào Array
+ </summary>
+	<param name="arrSubKey">Array cần thêm</param>
+	<param name="valueName">Giá trị cần thêm</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.KillChildProcess(Microsoft.Win32.RegistryKey,System.String,System.String[]@)">
+	<summary>
+ Các bước đóng các exe con liên quan
+ </summary>
+	<param name="RegistryKey">Nhánh chính</param>
+	<param name="subKeyName">exe đang đóng</param>
+	<param name="arrSubKey">Danh sách các exe được gọi bởi exe đang đóng</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0000.CheckDupKeyPrimary(System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra trùng Khóa
+ </summary>
+	<param name="Table_Name"></param>
+	<param name="Field_Name"></param>
+	<param name="Field_Values1"></param>
+	<param name="Field_Values2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:D02E0140.D99X0000">
+	<summary>
+ Module này liên quan đến các biến toàn cục, hàm toàn cục.
+ </summary>
+</member><member name="M:D02E0140.D99X0011.GetBackColorObligatory">
+	<summary>
+ Lấy màu bắt buộc nhập cho các control
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0011.CheckInvoiceDateWithVoucherDate(System.Byte,C1.Win.C1Input.C1DateEdit,C1.Win.C1Input.C1DateEdit)">
+	<summary>
+ Kiểm tra ngày chứng từ và Ngày hóa đơn
+ </summary>
+	<param name="iD91RefDate">Required. Thiết lập theo D91.</param>
+	<param name="c1VoucherDate">Required. Date voucher control.</param>
+	<param name="c1InvoiceDate">Required. Date invoice control.</param>
+	<remarks>Return True : Valid</remarks>
+</member><member name="M:D02E0140.D99X0011.CheckInvoiceDateWithVoucherDate(System.Byte,C1.Win.C1Input.C1DateEdit,C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String,System.Int32)">
+	<summary>
+ Kiểm tra ngày chứng từ và Ngày hóa đơn trên lưới (dataField column)
+ </summary>
+	<param name="iD91RefDate">Required. Thiết lập theo D91.</param>
+	<param name="c1VoucherDate">Required. Date control.</param>
+	<param name="tdbg">lưới</param>
+	<param name="COL_InvoiceDate">DataField cột Ngày hóa đơn trên lưới. String</param>
+	<param name="iSplit">split chứa cột Ngày hóa đơn. Integer</param>
+	<remarks>Return True : Valid</remarks>
+</member><member name="M:D02E0140.D99X0011.CheckInvoiceDateWithVoucherDate(System.Byte,C1.Win.C1Input.C1DateEdit,C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32,System.Int32)">
+	<summary>
+ Kiểm tra ngày chứng từ và Ngày hóa đơn trên lưới (index column)
+ </summary>
+	<param name="iD91RefDate">Required. Thiết lập theo D91.</param>
+	<param name="c1VoucherDate">Required. Date control.</param>
+	<param name="tdbg">lưới</param>
+	<param name="COL_InvoiceDate">index cột Ngày hóa đơn trên lưới. Integer</param>
+	<param name="iSplit">split chứa cột Ngày hóa đơn. Integer</param>
+	<remarks>Return &gt;</remarks>
+</member><member name="M:D02E0140.D99X0011.ClearText(System.Windows.Forms.Control,System.Windows.Forms.Control[])">
+	<summary>
+ Xóa tất cả các control trừ các control trong tập truyền vào ctrlExclude
+ </summary>
+	<param name="ctrl">truyền vào Me</param>
+	<param name="ctrlExclude">truyền vào tập các control (txtName, tdbcCurrencyID, c1dateVoucherDate) không gán text =""</param>
+	<remarks>Cách gọi: tại nút Nhập tiếp, gọi ClearText (Me, txtName, tdbcCurrencyID, c1dateVoucherDate)</remarks>
+</member><member name="M:D02E0140.D99X0011.EnabledTabPage(System.Windows.Forms.TabPage[],System.Boolean)">
+	<summary>
+ Set thuộc tính Enable = False của Tab page
+ </summary>
+	<param name="tabPage">tập các tab cần set Enabled = False</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0011.CheckExeFixSynchronous(System.String)">
+	<summary>
+ Kiểm tra đồng bộ giữa exe và fix 
+ </summary>
+	<param name="sExeName">DxxExxxx</param>
+	<returns>True: tiếp tục chạy Lemon3; False: kết thúc chương trình</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0011.CheckVersionUpdate(System.String)">
+	<summary>
+ Kiểm tra đồng bộ giữa exe và fix
+ </summary>
+	<param name="sExeName">DxxExxxx</param>
+	<returns>True: Đã đồng bộ; False: Chưa đồng bộ</returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X2222.AddColVisible(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.Collections.ArrayList@,System.Int32[],System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Đưa vào mảng ar các cột Hiển thị trên lưới
+ </summary>
+	<param name="c1Grid"></param>
+	<param name="iSplit"></param>
+	<param name="ar"></param>
+	<param name="ArrColObl"></param>
+	<param name="bCheckGroup">chỉ bật True khi lưới không gọi usercontrol D09U1111</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X2222.AddColVisible_String(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Collections.ArrayList@,System.Int32,System.String[],System.Collections.ArrayList,System.Boolean,System.Boolean)">
+	<summary>
+ Đưa vào mảng ar các cột Hiển thị trên lưới (Cột trên lưới định nghĩa dạng String)
+ </summary>
+	<param name="ArrTemplate"></param>
+	<param name="c1Grid"></param>
+	<param name="ar"></param>
+	<param name="iSplit"></param>
+	<param name="ArrColObl"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X2222.CreateTableForExcelOnly(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Collections.ArrayList,System.Int32[],System.Int32[])">
+	<summary>
+ Tạo Table Caption cho Grid Export Excel 
+ </summary>
+	<param name="C1Grid">Lưới của form truyền vào</param>
+	<param name="arrColVisible">mảng các cột được hiển thị trên lưới</param>
+	<param name="arrColSum">mảng các cột có tính tổng</param>
+	<param name="arrColDateLong">mảng các cột có ngày định dạng dd/MM/yyyy hh:mm:ss</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99X0001.rV">
+	<summary>
+ Lưu trữ Resource tiếng Việt
+ </summary>
+</member><member name="F:D02E0140.D99X0001.rE">
+	<summary>
+ Lưu trữ Resource tiếng Anh
+ </summary>
+</member><member name="M:D02E0140.D99X0001.r(System.String)">
+	<summary>
+ Trả về chuỗi resource ứng với ResourceID truyền vào
+ </summary>
+	<param name="ResourceID">Mã Resource</param>
+	<remarks>Nếu không tìm thấy ResourceID ở file Tiếng Anh thì sẽ
+ trả về Resouce ở file Tiếng Việt, và nếu không tìm thấy Resource ở 
+ file Tiếng Việt sẽ trả về Mã ResourceID này
+ </remarks>
+</member><member name="T:D02E0140.D99X0001">
+	<summary>
+ Module quản lý các vấn đề về Resource
+ </summary>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.String,System.Int32[])">
+	<summary>
+ Đổ nguồn cho C1Combo
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1Combo</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.String,System.Int32[],System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1Combo nhập Unicode
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1Combo</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.Data.DataTable,System.Int32[])">
+	<summary>
+ Đổ nguồn cho C1Combo
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1Combo</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.Data.DataTable,System.Int32[],System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1Combo nhập Unicode
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1Combo</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.String)">
+	<summary>
+ Đổ nguồn cho C1Combo
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1Combo nhập Unicode
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.Data.DataTable)">
+	<summary>
+ Đổ nguồn cho C1Combo
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1List.C1Combo,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1Combo nhập Unicode
+ </summary>
+	<param name="C1Combo">Tên C1Combo cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String)">
+	<summary>
+ Đổ nguồn cho C1DropDown
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1DropDown nhập Unicode
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Data.DataTable)">
+	<summary>
+ Đổ nguồn cho C1DropDown
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1DropDown nhập Unicode
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Int32[])">
+	<summary>
+ Đổ nguồn cho C1DropDown
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1DropDown</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.String,System.Int32[],System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1DropDown nhập Unicode
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1DropDown</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Data.DataTable,System.Int32[])">
+	<summary>
+ Đổ nguồn cho C1DropDown
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1DropDown</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Data.DataTable,System.Int32[],System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1DropDown nhập Unicode
+ </summary>
+	<param name="C1DropDown">Tên C1DropDown cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+	<param name="Width">Mảng chiều rộng các cột tương ứng của C1DropDown</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable,System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1Grid nhập Unicode
+ </summary>
+	<param name="C1Grid">Tên C1Grid cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String,System.Boolean)">
+	<summary>
+ Đổ nguồn cho C1Grid nhập Unicode
+ </summary>
+	<param name="C1Grid">Tên C1Grid cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.String)">
+	<summary>
+ Đổ nguồn cho C1Grid
+ </summary>
+	<param name="C1Grid">Tên C1Grid cần đổ nguồn</param>
+	<param name="sSQL">Lệnh SQL đổ nguồn</param>
+</member><member name="M:D02E0140.D99X0002.LoadDataSource(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Data.DataTable)">
+	<summary>
+ Đổ nguồn cho C1Grid
+ </summary>
+	<param name="C1Grid">Tên C1Grid cần đổ nguồn</param>
+	<param name="dt">DataTable nguồn</param>
+</member><member name="T:D02E0140.D99X0002">
+	<summary>
+ Module liên quan đến các vấn đề của hãng C1
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D99F2222._modeVB6">
+	<summary>
+ _modeVB6 = 1: màn hình VB6; 0 màn hình .NET
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99F2222.GetFormName">
+	<summary>
+ Lấy  FormName dùng để lưu mẫu xuất dữ liệu
+ Nếu FormID được truyền là một chuỗi các Form thì FormName được lấy phần tử đầu tiên của chuỗi đó
+ còn FormID được truyền từ 1 Form thì FormName là chính nó
+ </summary>
+	<remarks></remarks>
+</member><member name="T:D02E0140.D02X0000">
+	<summary>
+ D02E0140: Chứa các màn hình Danh mục
+ Sub Main và các vấn đề liên quan đến việc khởi động exe con
+ </summary>
+</member><member name="F:D02E0140.D02X0001.MODULED02">
+	<summary>
+ Module đang coding D02E0140
+ </summary>
+</member><member name="F:D02E0140.D02X0001.D02">
+	<summary>
+ Chuỗi D02
+ </summary>
+</member><member name="F:D02E0140.D02X0001.L3_APP_NAME">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E0140.D02X0001.L3_HS_SECTION">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E0140.D02X0001.L3_HS_MODULE">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E0140.D02X0001.L3_HS_VALUE">
+	<summary>
+ Dùng cho kiểm tra Security theo chuẩn của DIGINET
+ </summary>
+</member><member name="F:D02E0140.D02X0001.gbSaveOK">
+	<summary>
+ Dùng cho kiểm tra luu thanh cong 
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.OriginalAmount">
+	<summary>
+ format thành tiền
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.OriginalAmountRound">
+	<summary>
+ Số làm tròn của thành tiền
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.ConvertedAmount">
+	<summary>
+ format thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.ConvertedAmountRound">
+	<summary>
+ Số làm tròn của thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.ExchangeRate">
+	<summary>
+ format tỷ giá
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.ExchangeRateRound">
+	<summary>
+ Số làm tròn của tỷ giá
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.BaseCurrencyID">
+	<summary>
+ Nguyên tệ gốc
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.DecimalSeperator">
+	<summary>
+ Dấu phân cách thập phân
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormat.ThousandSeperator">
+	<summary>
+ Dấu phân cách hàng ngàn
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.ExchangeRate">
+	<summary>
+ format tỷ giá
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.DecimalPlaces">
+	<summary>
+ format nguyên tệ
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.MyOriginal">
+	<summary>
+ format nguyên tệ ứng với mỗi loại tiền
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.D90_Converted">
+	<summary>
+ format tiền quy đổi
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.D07_Quantity">
+	<summary>
+ format số lượng, số lượng QĐ: nhóm sản xuất (D06, D07, D12, D37); nhóm kinh doanh
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.D07_UnitCost">
+	<summary>
+ format đơn giá: nhóm sản xuất (D06, D07, D12, D37); nhóm kinh doanh
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.D08_Quantity">
+	<summary>
+ format số lượng, số lượng QĐ: nhóm sản xuất (D08, D20, D30, D31, D32, D33, D34, D35, D36)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.D08_UnitCost">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.D08_Ratio">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.BOMQty">
+	<summary>
+ format số lượng, số lượng QĐ: nhóm sản xuất (danh mục Bộ định mức D08, danh mục Cấu trúc sản phẩm D32)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.BOMPrice">
+	<summary>
+ format đơn giá: nhóm sản xuất (danh mục Bộ định mức D08, danh mục Cấu trúc sản phẩm D32)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.BOMAmt">
+	<summary>
+ format thành tiền: nhóm sản xuất (danh mục Bộ định mức D08, danh mục Cấu trúc sản phẩm D32)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.StructureFormatNew.DefaultNumber2">
+	<summary>
+ Format 2 số lẻ (không theo quy tắc nào)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:D02E0140.D02X0001.StructureFormatNew">
+	<summary>
+ Khai báo structure cho phần định dạng format theo chuẩn chung mới lấy từ D91P9300
+ </summary>
+</member><member name="T:D02E0140.D02X0001.Button">
+	<summary>
+ Khai bao de chon cac button tren luoi vd: Khoan muc, doi tuong,mat hang...
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0001.D02Options">
+	<summary>
+ Lưu trữ các thiết lập tùy chọn
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.MessageAskBeforeSave">
+	<summary>
+ Hỏi trước khi lưu
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.MessageWhenSaveOK">
+	<summary>
+ Thông báo khi lưu thành công
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.ViewFormPeriodWhenAppRun">
+	<summary>
+ Hiển thị form chọn kỳ kế toán khi chạy chương trình
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.SaveLastRecent">
+	<summary>
+ Lưu giá trị gần nhất
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.DefaultDivisionID">
+	<summary>
+ Lưu đơn vị mặc định
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.LockConvertedAmount">
+	<summary>
+ Khóa thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.RoundConvertedAmount">
+	<summary>
+ Làm tròn thành tiền quy đổi
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.ViewWorkflow">
+	<summary>
+ Hiển thị quy trình sơ đồ nghiệp vụ
+ </summary>
+</member><member name="F:D02E0140.D02X0001.StructureOption.ReportLanguage">
+	<summary>
+ Ngôn ngữ báo cáo
+ </summary>
+</member><member name="T:D02E0140.D02X0001.StructureOption">
+	<summary>
+ Khai báo Structure cho phần Tùy chọn của Module
+ </summary>
+</member><member name="T:D02E0140.D02X0001">
+	<summary>
+ Module này liên qua đến các khai báo biến, enum, ... toàn cục
+ </summary>
+	<remarks>Các khai báo ở đây không được trùng với các khai báo ở các Module D99Xxxxx</remarks>
+</member><member name="M:D02E0140.D99X0004.ConvertVietwareFToUnicode(System.String)">
+	<summary>
+ Convert chuỗi từ VietwareF (MS Sans Serif, DG Sans Serif) sang Unicode
+ </summary>
+	<param name="sText"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.ConvertVniToUnicode(System.String)">
+	<summary>
+ Convert chuỗi từ VNI sang Unicode
+ </summary>
+	<param name="szInput"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.ConvertUnicodeToVni(System.String)">
+	<summary>
+ Chuyển đổi chuyển dạng Unicode sang VNI
+ </summary>
+	<param name="vnstr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.ConvertVniToUnicode(System.Data.DataTable@)">
+	<summary>
+ Chuyển dữ liệu của Table sang Unicode
+ </summary>
+	<param name="dt"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.ConvertDataTable(System.Data.DataTable@,System.String[])">
+	<summary>
+ Chuyển Vni sang Unicode cho các cột của table
+ </summary>
+	<param name="dt"></param>
+	<param name="myStrArray"> Dim myStrArray() As String = {"RelationName", "RelativeName'} </param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.ConvertDataRow(System.Data.DataRow@,System.String[])">
+	<summary>
+ Chuyển Vni sang Unicode cho các cột của datarow
+ </summary>
+	<param name="dr"></param>
+	<param name="myStrArray"> Dim myStrArray() As String = {"RelationName", "RelativeName'} </param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeGroupBy(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Boolean)">
+	<summary>
+ Convert Heading font of Grid have GroupBy
+ </summary>
+	<param name="C1Grid"></param>
+	<param name="bUseUnicode"></param>
+	<remarks>This function must set after LoadLanguage function</remarks>
+</member><member name="M:D02E0140.D99X0004.GetCodeTable">
+	<summary>
+ Lấy biến CodeTable theo sản phẩm Lemon3
+ </summary>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.SQLStringUnicode(System.Windows.Forms.TextBox,System.Boolean)">
+	<summary>
+ Chuyển Textbox lưu dạng Unicode hay Vni
+ </summary>
+	<param name="txtName"></param>
+	<param name="bSaveUnicode">True: lưu chuỗi dạng Unicode, False: Lưu chuỗi dạng Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.SQLStringUnicode(System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển giá trị lưu dạng Unicode hay Vni
+ </summary>
+	<param name="text"></param>
+	<param name="bSaveUnicode">True: lưu chuỗi dạng Unicode, False: Lưu chuỗi dạng Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.SQLStringUnicode(System.Object,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển giá trị lưu dạng Unicode hay Vni
+ </summary>
+	<param name="text"></param>
+	<param name="bSaveUnicode">True: lưu chuỗi dạng Unicode, False: Lưu chuỗi dạng Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.SQLStringUnicode(System.String)">
+	<summary>
+ Chuyển chuỗi Text (Vni) sang chuỗi Unicode
+ </summary>
+	<param name="Text">Chuỗi Vni</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.SQLStringVni(System.String)">
+	<summary>
+ Chuyển chuỗi Text (Unicode) sang chuỗi Vni
+ </summary>
+	<param name="Text">Chuỗi Unicode</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeAllString(System.String@,System.String@,System.Boolean)">
+	<summary>
+ Trả về chuỗi Tất cả cho Unicode hay Vni
+ </summary>
+	<param name="sUnicode">Giá trị chữ Unicode</param>
+	<param name="sAll">Giá trị chữ Tất cả</param>
+	<param name="bUseUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeJoin(System.Boolean)">
+	<summary>
+ Nối chữ U vào FieldName để load dữ liệu cho form dùng Unicode
+ </summary>
+	<param name="bUnicode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeCaption(System.Boolean)">
+	<summary>
+ Nối chữ Unicode vào tiêu đề cho form Nhập liệu bằng Unicode
+ </summary>
+	<param name="bUnicode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeGridDataField(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String[],System.Boolean)">
+	<summary>
+ Chuyển đổi DataField và cột COL_ của lưới (định nghĩa cột bằng string) cho load Unicode
+ </summary>
+	<param name="tdbg"></param>
+	<param name="ArrCol_Name"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeGridDataField(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.String@,System.Boolean)">
+	<summary>
+ Chuyển đổi DataField và cột COL_ của lưới (định nghĩa cột bằng string) cho load Unicode
+ </summary>
+	<param name="tdbg"></param>
+	<param name="Col_Name"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeGridDataField(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32,System.Boolean)">
+	<summary>
+ Chuyển đổi DataField của lưới (định nghĩa cột bằng Integer) cho load Unicode
+ </summary>
+	<param name="tdbg"></param>
+	<param name="Col_Name"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeGridDataField(C1.Win.C1TrueDBGrid.C1TrueDBGrid@,System.Int32[],System.Boolean)">
+	<summary>
+ Chuyển đổi DataField của lưới (định nghĩa cột bằng Integer) cho load Unicode
+ </summary>
+	<param name="tdbg"></param>
+	<param name="ArrCol_Name"></param>
+	<param name="bUnicode"></param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0004.FontUnicode(System.Boolean,System.Drawing.FontStyle)">
+	<summary>
+ Font của control
+ </summary>
+	<param name="bUseUnicode">Tùy chọn Unicode</param>
+	<param name="fontStyle">Kiểu font: Bold, Underline, ... (default Normal)</param>
+	<returns>Trả về font</returns>
+	<remarks>fontStyle: Underline phải truyền vào nếu label hoặc caption của lưới có Tìm kiếm F2</remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeGetReportPath(System.Boolean,System.Byte,System.String)">
+	<summary>
+ Lấy đường dẫn báo cáo
+ </summary>
+	<param name="bUnicode">Tùy chọn Unicode</param>
+	<param name="iReportLanguage">Tùy chọn ngôn ngữ bóa cáo</param>
+	<param name="sValueCustom">giá trị của combo Đặc thù</param>
+	<returns>Đường dẫn báo cáo</returns>
+	<remarks>Đối số sValueCustom: nếu form không có combo Đặc thù thì truyền ""</remarks>
+</member><member name="M:D02E0140.D99X0004.UnicodeSubReport(System.String@,System.String@,System.String,System.Boolean)">
+	<summary>
+ Trả về SubReport và câu đổ nguồn của SubReport khi Unicode
+ </summary>
+	<param name="sSubReportID">Tên SubReport</param>
+	<param name="sSQLSubReportID">Câu đổ nguồn SubReport</param>
+	<param name="sDivisionID">Đơn vị có trên form - Mặc định là "%" nếu form không có combo Đơn vị</param>
+	<param name="bUnicode">Tùy chọn Unicode</param>
+	<remarks>Form có combo Đơn vị không?</remarks>
+</member><member name="M:D02E0140.D99X0004.InputbyUnicode(System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+	<summary>
+ Chuyển các control sang nhập liệu Uniocde
+ </summary>
+	<param name="control"></param>
+	<remarks></remarks>
+</member><member name="T:D02E0140.D99X0004">
+	<summary>
+ Module quản lý các vấn đề về Convert Font
+ </summary>
+	<remarks></remarks>
+</member><member name="P:D02E0140.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:D02E0140.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:D02E0140.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:D02E0140.D02X0002.UpdateOrderNum(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32)">
+	<summary>
+ Cập nhật số thứ tự cho lưới
+ </summary>
+</member><member name="M:D02E0140.D02X0002.CheckExist(C1.Win.C1TrueDBGrid.C1TrueDBDropdown,System.Int32,System.String)">
+	<summary>
+ Kiểm tra sự tồn tại của 1 giá trị trong 1 cột trên lưới với nguồn dữ liệu trong TDBDropdown
+ </summary>
+</member><member name="M:D02E0140.D02X0002.SetCurrentRow(C1.Win.C1TrueDBGrid.C1TrueDBGrid,System.Int32,System.String)">
+	<summary>
+ Xác định ví trí hiện hành của lưới
+ </summary>
+</member><member name="M:D02E0140.D02X0002.Sum(System.Int32,C1.Win.C1TrueDBGrid.C1TrueDBGrid)">
+	<summary>
+ Tính tổng cho 1 cột tương ứng trên lưới
+ </summary>
+	<param name="ipCol"></param>
+	<param name="C1Grid"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D02X0002.TongCong(System.Int32)">
+	<summary>
+ TONG CONG SO DONG TREN LUOI
+ </summary>
+	<param name="iRow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:D02E0140.D02X0002">
+	<summary>
+ Module này dùng để khai báo các Sub và Function toàn cục
+ </summary>
+	<remarks>Các khai báo Sub và Function ở đây không được trùng với các khai báo
+ ở các module D99Xxxxx
+ </remarks>
+</member><member name="M:D02E0140.D99X0005.SetShortcutPopupMenu(C1.Win.C1Command.C1CommandHolder)">
+	<summary>
+ Set Image và Shortcut của Popupmenu
+ </summary>
+	<param name="C1CmdHolder">C1CommandHolder của popupmenu</param>
+	<remarks>Gọi hàm SetShortcutPopupMenu(C1CommandHolder)tại form_load</remarks>
+</member><member name="M:D02E0140.D99X0005.SetShortcutPopupMenu(System.Windows.Forms.Form,System.Windows.Forms.ToolStrip,System.Windows.Forms.ContextMenuStrip,System.Boolean)">
+	<summary>
+ Set Image và Shortcut của ToolStripButton
+ </summary>
+	<param name="Form">Me</param>
+	<param name="TableToolStrip">System.Windows.Forms.ToolStri</param>
+	<param name="bTransactionHistory">Nếu = True thì menu tsbSysInfo có tên là Lịch sử tác động</param>
+	<param name="ContextMenuStrip"></param>
+	<remarks>Gọi hàm  SetShortcutPopupMenu(Me, TableToolStrip, ContextMenuStrip1) tại form_load</remarks>
+</member><member name="M:D02E0140.D99X0005.CallMenuFromGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid,C1.Win.C1Command.ClickEventArgs)">
+	<summary>
+ Chặn phím tắt của popup menu
+ </summary>
+	<param name="tdbg"></param>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks>Tại sự kiện của các menu kiểm tra: If CallMenuFromGrid(tdbg, e) = False Then Exit Sub</remarks>
+</member><member name="T:D02E0140.D99X0005">
+	<summary>
+ Module quản lý các vấn đề về Shortcut và Image của Popupmenu
+ </summary>
+	<remarks>Chỉ gắn vào exe nào có sử dụng popupmenu</remarks>
+</member><member name="M:D02E0140.D99X0016.CreateIGE(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Sinh IGE cho khóa chính Master 
+ </summary>
+	<param name="Table">Bảng sinh khóa</param>
+	<param name="Field">Tên trường khóa chính</param>
+	<param name="Key1">Giá trị chuỗi 1</param>
+	<param name="Key2">Giá trị chuỗi 2</param>
+	<param name="Key3">Giá trị chuỗi 3</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0016.CreateIGE(System.String,System.String,System.String,System.String,System.String,D99D0041.OutOrderEnum,System.Int32,System.String)">
+	<summary>
+ Sinh IGE cho khóa chính Master, có truyền chiều dài và thứ tự hiển thị
+ </summary>
+	<param name="Table">Bảng sinh khóa</param>
+	<param name="Field">Tên trường khóa chính</param>
+	<param name="Key1">Giá trị chuỗi 1</param>
+	<param name="Key2">Giá trị chuỗi 2</param>
+	<param name="Key3">Giá trị chuỗi 3</param>
+	<param name="OutOrder"></param>
+	<param name="Length"></param>
+	<param name="Seperator"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0016.CreateIGEs(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64)">
+	<summary>
+ Sinh IGE cho khóa chính Detail
+ </summary>
+	<param name="Table">Bảng sinh khóa</param>
+	<param name="Field">Tên trường khóa chính</param>
+	<param name="Key1">Giá trị chuỗi 1</param>
+	<param name="Key2">Giá trị chuỗi 2</param>
+	<param name="Key3">Giá trị chuỗi 3</param>
+	<param name="OldIGE">IGE lần đầu sinh</param>
+	<param name="NumberIGE">Số dòng cần sinh IGE</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D89E0030Form.D89F9100">
+	<summary>
+ D89F9100
+ </summary>
+</member><member name="T:D02E0140.D89E0030Form">
+	<summary>
+ Các màn hình của exe con D91E0130
+ </summary>
+</member><member name="M:D02E0140.D89E0030.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D89E0030
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02E0140.D89E0030.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D91E0130
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02E0140.D89E0030.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02E0140.D89E0030.FormPermission">
+	<summary>
+ Màn hình phân quyền cho exe con
+ </summary>
+</member><member name="P:D02E0140.D89E0030.In_ModuleName">
+	<summary>
+ ModuleName
+ </summary>
+</member><member name="P:D02E0140.D89E0030.In_KeyID">
+	<summary>
+ KeyID02
+ </summary>
+</member><member name="M:D02E0140.D89E0030.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D02E0140.D89E0030.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_Server">
+	<summary>
+ Server truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_Database">
+	<summary>
+ Database truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_ConnectionUser">
+	<summary>
+ User login vào Lemon3 truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_UserID">
+	<summary>
+ User login vào Database truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_Password">
+	<summary>
+ Password user login vào Database truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_DivisionID">
+	<summary>
+ Đơn vị truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_TranMonth">
+	<summary>
+ Tháng kế toán truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_TranYear">
+	<summary>
+ Năm kế toán truyền vào
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_Language">
+	<summary>
+ Ngôn ngữ truyền vào
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D02X0003.PARA_FormID">
+	<summary>
+ Form ID dùng để hiện thị. Ví dụ: DxxFxxxx
+ </summary>
+</member><member name="F:D02E0140.D02X0003.PARA_FormIDPermission">
+	<summary>
+ Form ID dùng để phân quyền. Ví dụ: DxxFxxxx
+ </summary>
+</member><member name="T:D02E0140.D02X0003">
+	<summary>
+ Định nghĩa các biến truyền qua lại giữa các exe với nhau
+ </summary>
+</member><member name="M:D02E0140.D02X0004.LoadOptions">
+	<summary>
+ Load toàn bộ các thông số tùy chọn vào biến D02Options
+ </summary>
+</member><member name="M:D02E0140.D02X0004.LoadFormatsNew">
+	<summary>
+ Load toàn bộ các thông số format cho biến DxxFormat theo chuẩn chung mới lấy từ D91P9300
+ </summary>
+</member><member name="M:D02E0140.D02X0004.AskSave">
+	<summary>
+ Hỏi trước khi lưu tùy thuộc vào thiết lập ở phần Tùy chọn
+ </summary>
+</member><member name="M:D02E0140.D02X0004.AskDelete">
+	<summary>
+ Thông báo trước khi xóa
+ </summary>
+</member><member name="M:D02E0140.D02X0004.SaveOK">
+	<summary>
+ Thông báo khi lưu thành công tùy theo phần thiết lập ở tùy chọn
+ </summary>
+</member><member name="M:D02E0140.D02X0004.DeleteOK">
+	<summary>
+ Thông báo sau khi xóa thành công
+ </summary>
+</member><member name="M:D02E0140.D02X0004.SaveNotOK">
+	<summary>
+ Thông báo không lưu được dữ liệu
+ </summary>
+</member><member name="M:D02E0140.D02X0004.DeleteNotOK">
+	<summary>
+ Thông báo không xóa được dữ liệu
+ </summary>
+</member><member name="T:D02E0140.D02X0004">
+	<summary>
+ Các vấn đề liên quan đến Thông tin hệ thống và Tùy chọn
+ </summary>
+</member><member name="F:D02E0140.D91E0130Form.D91F4010">
+	<summary>
+ D91F4010
+ </summary>
+</member><member name="T:D02E0140.D91E0130Form">
+	<summary>
+ Các màn hình của exe con D91E0130
+ </summary>
+</member><member name="M:D02E0140.D91E0130.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D91E0130
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02E0140.D91E0130.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D91E0130
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02E0140.D91E0130.FormShow">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02E0140.D91E0130.FormPermission">
+	<summary>
+ Màn hình phân quyền cho exe con
+ </summary>
+</member><member name="P:D02E0140.D91E0130.In_TableName">
+	<summary>
+ TableName
+ </summary>
+</member><member name="P:D02E0140.D91E0130.In_KeyID">
+	<summary>
+ KeyID
+ </summary>
+</member><member name="P:D02E0140.D91E0130.In_Key2ID">
+	<summary>
+ Key2ID
+ </summary>
+</member><member name="M:D02E0140.D91E0130.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D02E0140.D91E0130.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="T:D02E0140.D91E0130">
+	<summary>
+ Exe con danh mục mã tham khảo
+ </summary>
+</member><member name="F:D02E0140.D91E0240Form.D91F6010">
+	<summary>
+ D91F6010: Tìm kiếm theo Đối tượng, Mã hàng
+ D91F6020: Tìm kiếm Tiêu thức khi in báo cáo
+ D91F0402: Tìm kiếm theo Diễn giải
+ </summary>
+</member><member name="T:D02E0140.D91E0240Form">
+	<summary>
+ Các màn hình của exe con D91E0240: Tìm kiếm mở rộng
+ </summary>
+</member><member name="M:D02E0140.D91E0240.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D91E0240
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02E0140.D91E0240.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D91E0240
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02E0140.D91E0240.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02E0140.D91E0240.FormPermision">
+	<summary>
+ Màn hình phân quyền
+ </summary>
+</member><member name="P:D02E0140.D91E0240.InListID">
+	<summary>
+ 1 : Tìm kiếm Loại chứng trừ
+ 2 : Tìm kiếm Đối tượng
+ 3 : Tìm kiếm Hàng hóa
+ </summary>
+</member><member name="P:D02E0140.D91E0240.InWhere">
+	<summary>
+ Điều kiện tìm kiếm, truyen vao mot chuoi tim kiem
+ Loại ĐT: Đối với Cbo Đối tượng thì truyền 
+ IsDxx =1: Đối với Mã hàng (InventoryID) 
+ </summary>
+</member><member name="P:D02E0140.D91E0240.SQLSelection">
+	<summary>
+ Câu SQL để load lên lưới khi tìm kiếm theo Tiêu thức của báo cáo
+ </summary>
+</member><member name="P:D02E0140.D91E0240.ModuleID">
+	<summary>
+ Truyền vào mã moduleID (Dxx)
+ VD: D90
+ </summary>
+</member><member name="P:D02E0140.D91E0240.InWhereValue">
+	<summary>
+ Điều kiện tìm kiếm, truyen vao gia tri can tim, con field can tim kiem thi trong du lieu da do ra
+ Loại ĐT: Đối với Cbo Đối tượng thi chi can truyen gia tri cua doi tuong, con truong ObjectID da co roi 
+ </summary>
+</member><member name="P:D02E0140.D91E0240.ModeSelect">
+	<summary>
+ ModeSelect
+ </summary>
+</member><member name="P:D02E0140.D91E0240.Output01">
+	<summary>
+ Kết quả sau khi tìm kiếm
+ </summary>
+</member><member name="P:D02E0140.D91E0240.Output02">
+	<summary>
+ Kết quả sau khi tìm kiếm
+ </summary>
+</member><member name="M:D02E0140.D91E0240.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="M:D02E0140.D91E0240.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D02E0140.D99X0009.SQLSubReportG4(System.String)">
+	<summary>
+ Câu SQL load SubReport cho G4 (có Combo Đơn vị hiện tại)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadCboDivisionIDD09(C1.Win.C1List.C1Combo,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Load data of combo DivisionID in Inquiry/Transaction/List (no Report) 
+ </summary>
+	<param name="tdbcDivisionID">combo DivisionID</param>
+	<param name="sModuleID">Dxx</param>
+	<param name="bHavePercent">True: contain %; False(Default): no contain %</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadCboDivisionIDReportD09(C1.Win.C1List.C1Combo,System.String,System.Boolean)">
+	<summary>
+ Load data of combo DivisionID in Report
+ </summary>
+	<param name="tdbc">Combo DivisionID</param>
+	<param name="sModuleID">ModuleID (Dxx)</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadtdbcDepartmentID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String,System.Boolean)">
+	<summary>
+ Load tdbcDepartmentID by BlockID and gsDivisionID 
+ </summary>
+	<param name="tdbc">tdbcDepartmentID</param>
+	<param name="dtOriginal">get value from ReturnTableDepartmentID(True) function</param>
+	<param name="sBlockID">value of tdbcBlockID</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadtdbcDepartmentID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String,System.String,System.Boolean)">
+	<summary>
+ Load tdbcDepartmentID by BlockID and tdbcDivisionID 
+ </summary>
+	<param name="tdbc">tdbcDepartmentID</param>
+	<param name="dtOriginal">get value from ReturnTableDepartmentID() function</param>
+	<param name="sBlockID">tdbcBlockID</param>
+	<param name="sDivisionID">tdbcDivisionID</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadtdbcTeamID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String,System.String,System.Boolean)">
+	<summary>
+ Load tdbcTeamID by BlockID and gsDivisionID 
+ </summary>
+	<param name="tdbc">tdbcTeamID</param>
+	<param name="dtOriginal">get value from ReturnTableTeamID(True) function</param>
+	<param name="sBlockID">value of tdbcBlockID</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadtdbcTeamID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Load tdbcTeamID by BlockID and tdbcDivisionID 
+ </summary>
+	<param name="tdbc">tdbcTeamID</param>
+	<param name="dtOriginal">get value from ReturnTableTeamID() function</param>
+	<param name="sBlockID">tdbcBlockID</param>
+	<param name="sDivisionID">tdbcDivisionID</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadtdbcEmployeeID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Load tdbcEmployeeID by BlockID,DepartmentID,TeamID,WorkingStatusID 
+ </summary>
+	<param name="tdbc">tdbcEmployeeID</param>
+	<param name="dtOriginal">get value from ReturnTableEmployeeID(True) function</param>
+	<param name="sBlockID">value of tdbcBlockID</param>
+	<remarks></remarks>
+</member><member name="M:D02E0140.D99X0009.LoadtdbcEmployeeID(C1.Win.C1List.C1Combo,System.Data.DataTable,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Load tdbcEmployeeID by BlockID,DepartmentID,TeamID,WorkingStatusID and tdbcDivisionID 
+ </summary>
+	<param name="tdbc">tdbcEmployeeID</param>
+	<param name="dtOriginal">get value from ReturnTableEmployeeID() function</param>
+	<param name="sBlockID">tdbcBlockID</param>
+	<param name="sDivisionID">tdbcDivisionID</param>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D91E0340Form.D91F2010">
+	<summary>
+ D91F4010: Danh mục các File đính kèm
+ D91F2010: Danh mục các File ghi chú
+ </summary>
+</member><member name="T:D02E0140.D91E0340Form">
+	<summary>
+ Gọi exe con D91E0340: chứa file Đính kèm, Ghi chú
+ </summary>
+</member><member name="M:D02E0140.D91E0340.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D91E0340
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02E0140.D91E0340.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D91E0330
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02E0140.D91E0340.FormActive">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02E0140.D91E0340.Status">
+	<summary>
+ Dùng cho màn hình được gọi 
+ Truyền vào quyền: 0 hoặc 1 ; 0 không cho phép làm gì cả (trừ nút xem nếu lưới có dữ liệu), 1 cho Thêm, Xem, Sửa, Xóa.
+ </summary>
+</member><member name="P:D02E0140.D91E0340.TableName">
+	<summary>
+ Truyền vào tên bảng
+ </summary>
+</member><member name="P:D02E0140.D91E0340.Key01ID">
+	<summary>
+ Truyền vào Key01ID, Key chính
+ </summary>
+</member><member name="P:D02E0140.D91E0340.Key02ID">
+	<summary>
+ Truyền vào Key02ID
+ </summary>
+</member><member name="P:D02E0140.D91E0340.Key03ID">
+	<summary>
+ Truyền vào Key03ID
+ </summary>
+</member><member name="P:D02E0140.D91E0340.Key04ID">
+	<summary>
+ Truyền vào Key04ID
+ </summary>
+</member><member name="P:D02E0140.D91E0340.Key05ID">
+	<summary>
+ Truyền vào Key05ID
+ </summary>
+</member><member name="M:D02E0140.D91E0340.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D02E0140.D91E0340.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="T:D02E0140.D91E0340">
+	<summary>
+ Class D91E0340 dùng để gọi exe đính kèm _ghi chu D91E0340
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D02E0140.D91E0330Form.D91F2010">
+	<summary>
+ D91F2010
+ </summary>
+</member><member name="T:D02E0140.D91E0330Form">
+	<summary>
+ Các màn hình của exe con D91E0130
+ </summary>
+</member><member name="M:D02E0140.D91E0330.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Khởi tạo exe con D91E0130
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+</member><member name="M:D02E0140.D91E0330.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Khởi tạo exe con D91E0130
+ </summary>
+	<param name="Server">Server kết nối đến hệ thống</param>
+	<param name="Database">Database kết nối đến hệ thống</param>
+	<param name="UserDatabaseID">User Database kết nối đến hệ thống</param>
+	<param name="Password">Password kết nối đến hệ thống</param>
+	<param name="UserID">User Lemon3 kết nối đến hệ thống</param>
+	<param name="Language">Ngôn ngữ sử dụng</param>
+	<param name="DivisionID">Đơn vị hiện tại</param>
+	<param name="TranMonth">Tháng kế toán hiện tại</param>
+	<param name="TranYear">Năm kế toán hiện tại</param>
+</member><member name="P:D02E0140.D91E0330.FormShow">
+	<summary>
+ Màn hình cần hiển thị cho exe con
+ </summary>
+</member><member name="P:D02E0140.D91E0330.FormPermission">
+	<summary>
+ Màn hình phân quyền cho exe con
+ </summary>
+</member><member name="P:D02E0140.D91E0330.In_TableName">
+	<summary>
+ TableName
+ </summary>
+</member><member name="P:D02E0140.D91E0330.In_KeyID">
+	<summary>
+ KeyID
+ </summary>
+</member><member name="M:D02E0140.D91E0330.Run">
+	<summary>
+ Thực thi exe con
+ </summary>
+</member><member name="M:D02E0140.D91E0330.ExistFile(System.String)">
+	<summary>
+ Kiểm tra tồn tại exe con không ?
+ </summary>
+</member><member name="T:D02E0140.D91E0330">
+	<summary>
+ Exe con danh mục mã tham khảo
+ </summary>
+</member>
+</members>
+</doc>

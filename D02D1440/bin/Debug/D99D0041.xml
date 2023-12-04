@@ -1,0 +1,408 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D99D0041
+</name>
+</assembly>
+<members>
+<member name="M:D99D0041.D99C0001.#ctor(D99D0041.EnumLanguage)">
+	<summary>
+ Khởi tạo Finder với biến ngôn ngữ truyền vào
+ </summary>
+	<param name="language">Ngôn ngữ cần sử dụng</param>
+	<remarks></remarks>
+</member><member name="P:D99D0041.D99C0001.Language">
+	<summary>
+ Thay đổi ngôn ngữ sử dụng
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="T:D99D0041.D99C0001">
+	<summary>
+ Liên quan đến Finder
+ </summary>
+</member><member name="T:D99D0041.D99C0005">
+	<summary>
+ Liên quan đến thông tin hệ thống
+ </summary>
+</member><member name="M:D99D0041.D99C0007.SaveModulesSetting(System.String,D99D0041.ModuleOption,System.String,System.Object,D99D0041.CodeOption)">
+	<summary>
+ Ghi giá trị vào nhánh Modules
+ </summary>
+	<param name="sModuleName">Tên Module (viết tắt) ví dụ: D07</param>
+	<param name="nOption">Ghi ở nhánh nào</param>
+	<param name="sKeyName">Key tên là gì</param>
+	<param name="sKeyValue">Giá trị cần ghi là gì</param>
+	<param name="ModeCode">Có mã hóa không ? Mã hóa dùng lmCode</param>
+	<remarks></remarks>
+</member><member name="M:D99D0041.D99C0007.GetModulesSetting(System.String,D99D0041.ModuleOption,System.String,System.String,D99D0041.CodeOption)">
+	<summary>
+ Đọc giá trị ở nhánh Modules
+ </summary>
+	<param name="sModuleName">Tên Module (viết tắt) ví dụ: D07</param>
+	<param name="nOption">Đọc ở nhánh nào</param>
+	<param name="sKeyName">Key tên là gì</param>
+	<param name="sKeyValueDefault">Giá trị mặc định nếu đọc không có dữ liệu</param>
+	<param name="ModeCode">Có mã hóa không ? Mã hóa dùng lmCode</param>
+	<returns>Trả về kiểu String nếu đọc thành công, ngược lại trả về giá trị Default</returns>
+</member><member name="M:D99D0041.D99C0007.SaveOthersSetting(System.String,System.String,System.String,System.String,D99D0041.CodeOption)">
+	<summary>
+ Ghi giá trị vào nhánh Others
+ </summary>
+	<param name="sModuleName">Tên Module (viết tắt) ví dụ: D07</param>
+	<param name="Section">Section cần ghi là gì</param>
+	<param name="sKeyName">Key tên là gì</param>
+	<param name="sKeyValue">Giá trị cần ghi là gì</param>
+	<param name="ModeCode">Có mã hóa không ? Mã hóa dùng lmCode</param>
+</member><member name="M:D99D0041.D99C0007.GetOthersSetting(System.String,System.String,System.String,System.String,D99D0041.CodeOption)">
+	<summary>
+ Đọc giá trị ở nhánh Others
+ </summary>
+	<param name="sModuleName">Tên Module (viết tắt) ví dụ: D07</param>
+	<param name="Section">Section cần ghi là gì</param>
+	<param name="sKeyName">Key tên là gì</param>
+	<param name="sKeyValueDefault">Giá trị mặc định nếu đọc không có dữ liệu</param>
+	<param name="ModeCode">Có mã hóa không ? Mã hóa dùng lmCode</param>
+	<returns>Trả về kiểu String nếu đọc thành công, ngược lại trả về giá trị Default</returns>
+</member><member name="M:D99D0041.D99C0007.RegDeleteExe(System.String)">
+	<summary>
+ Xóa EXE con tại nhánh Others
+ </summary>
+	<param name="sExe">Tên EXE con (Section)</param>
+</member><member name="M:D99D0041.D99C0007.RegDelete(System.String)">
+	<summary>
+ Xóa bất kỳ ở nhánh HEY_CURRENT_USER
+ </summary>
+	<param name="strDir">Đường dẫn Registry chính xác</param>
+</member><member name="T:D99D0041.D99C0007">
+	<summary>
+ Liên quan đến Registry
+ </summary>
+</member><member name="P:D99D0041.D99C0008.Language">
+	<summary>
+ Ngôn ngữ sử dụng cho Messagebox
+ </summary>
+</member><member name="M:D99D0041.D99C0008.Msg(System.String)">
+	<summary>
+ Hiển thị Messagebox với các thông số truyền vào (mặc định button OK)
+ </summary>
+	<param name="sMessage">Chuỗi cần thông báo</param>
+</member><member name="M:D99D0041.D99C0008.Msg(System.String,System.String)">
+	<summary>
+ Hiển thị Messagebox với các thông số truyền vào (mặc định button OK)
+ </summary>
+	<param name="sMessage">Chuỗi cần thông báo</param>
+	<param name="sCaption">Tiêu đề</param>
+</member><member name="M:D99D0041.D99C0008.Msg(System.String,System.String,D99D0041.L3MessageBoxButtons)">
+	<summary>
+ Hiển thị Messagebox với các thông số truyền vào
+ </summary>
+	<param name="sMessage">Chuỗi cần thông báo</param>
+	<param name="sCaption">Tiêu đề</param>
+	<param name="buttons">Các buttons</param>
+</member><member name="M:D99D0041.D99C0008.Msg(System.String,System.String,D99D0041.L3MessageBoxButtons,D99D0041.L3MessageBoxIcon)">
+	<summary>
+ Hiển thị Messagebox với các thông số truyền vào
+ </summary>
+	<param name="sMessage">Chuỗi cần thông báo</param>
+	<param name="sCaption">Tiêu đề</param>
+	<param name="buttons">Các buttons</param>
+	<param name="icon">Icon</param>
+</member><member name="M:D99D0041.D99C0008.Msg(System.String,System.String,D99D0041.L3MessageBoxButtons,D99D0041.L3MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+	<summary>
+ Hiển thị Messagebox với các thông số truyền vào
+ </summary>
+	<param name="sMessage">Chuỗi cần thông báo</param>
+	<param name="sCaption">Tiêu đề</param>
+	<param name="buttons">Các buttons</param>
+	<param name="icon">Icon</param>
+	<param name="defaultButton">Button mặc định</param>
+</member><member name="M:D99D0041.D99C0008.MsgL3(System.String)">
+	<summary>
+ Hiển thị Messagebox với các thông số mặc định là: Title = "Thông báo", Button = OK, Icon = Information
+ </summary>
+	<param name="sMessage">Chuỗi cần thông báo</param>
+</member><member name="M:D99D0041.D99C0008.MsgAskSave">
+	<summary>
+ Bạn có muốn lưu giữ liệu này hay không?
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgSaveOK">
+	<summary>
+ Dữ liệu đã được lưu thành công.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgSaveNotOK">
+	<summary>
+ Không lưu được dữ liệu.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgAskDelete">
+	<summary>
+ Bạn có muốn xóa dữ liệu này không?
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgAskDeleteRow">
+	<summary>
+ Bạn có thật sự muốn xóa dòng dữ liệu này không?
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgCanNotEdit">
+	<summary>
+ Dữ liệu này đã được sử dụng. Bạn không thể sửa.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgCanNotDelete">
+	<summary>
+ Dữ liệu này đã được sử dụng. Bạn không thể xoá.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNoDataInGrid">
+	<summary>
+ Bạn phải nhập dữ liệu trên lưới.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNotYetEnter(System.String)">
+	<summary>
+ Bạn phải nhập ...
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNotYetChoose(System.String)">
+	<summary>
+ Bạn phải chọn ...
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgRegisterDivision">
+	<summary>
+ Bạn phải đăng ký đơn vị ở module Tổng hợp.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNotExistPeriod">
+	<summary>
+ Không tồn tại kỳ kế toán của đơn vị hiện tại.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNoPermissionCloseBook">
+	<summary>
+ Bạn không có quyền khóa sổ.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNoPermissionOpenBook">
+	<summary>
+ Bạn không có quyền mở sổ.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgNoPermissionNewPeriod">
+	<summary>
+ Bạn không có quyền tạo kỳ mới
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgCloseBook(System.String)">
+	<summary>
+ Khoá sổ thành công cho kỳ ...
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgOpenBook(System.String)">
+	<summary>
+ Mở sổ thành công cho kỳ ...
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgCopyDesctiption">
+	<summary>
+ Copy dữ liệu diễn giải vào cho lưới: - Tất cả các dòng (nhấn Yes) - Những dòng còn trống (nhấn No)
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgCopyColumn">
+	<summary>
+ Copy cột dữ liệu cho: - Tất cả các dòng (nhấn Yes) - Những dòng còn trống (nhấn No)
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgDuplicatePKey">
+	<summary>
+ Mã này đã tồn tại.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgSetUpDivision">
+	<summary>
+ Bạn phải khởi động lại module thì thiết lập đơn vị mới có tác dụng.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgInList">
+	<summary>
+ Bạn phải chọn dữ liệu có trong danh sách.
+ </summary>
+</member><member name="M:D99D0041.D99C0008.MsgInvalidConnection">
+	<summary>
+ Kết nối không thành công.
+ </summary>
+</member><member name="T:D99D0041.D99C0008">
+	<summary>
+ Liên quan đến MessageBox
+ </summary>
+</member><member name="F:D99D0041.EnumLanguage.Vietnamese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Việt
+ </summary>
+</member><member name="F:D99D0041.EnumLanguage.English">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Anh
+ </summary>
+</member><member name="F:D99D0041.EnumLanguage.French">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Pháp (chưa sử dụng)
+ </summary>
+</member><member name="F:D99D0041.EnumLanguage.Chinese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Trung Quốc (chưa sử dụng)
+ </summary>
+</member><member name="F:D99D0041.EnumLanguage.Japanese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Nhật (chưa sử dụng)
+ </summary>
+</member><member name="T:D99D0041.EnumLanguage">
+	<summary>
+ Enum miêu tả trạng thái của ngôn ngữ hiện tại
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxIcon.None">
+	<summary>
+ None
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxIcon.Question">
+	<summary>
+ Question
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxIcon.Exclamation">
+	<summary>
+ Exclamation
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxIcon.Information">
+	<summary>
+ Information
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxIcon.Err">
+	<summary>
+ Err
+ </summary>
+</member><member name="T:D99D0041.L3MessageBoxIcon">
+	<summary>
+ Icon dùng cho Messagebox
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxButtons.OK">
+	<summary>
+ Nút OK
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxButtons.OKCancel">
+	<summary>
+ Nút OK, Cancel
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxButtons.YesNoCancel">
+	<summary>
+ Nút Yes, No, Cancel
+ </summary>
+</member><member name="F:D99D0041.L3MessageBoxButtons.YesNo">
+	<summary>
+ Nút Yes, No
+ </summary>
+</member><member name="T:D99D0041.L3MessageBoxButtons">
+	<summary>
+ Button dùng cho Messagebox
+ </summary>
+</member><member name="F:D99D0041.ReportModeType.lmPreview">
+	<summary>
+ Xem trước
+ </summary>
+</member><member name="F:D99D0041.ReportModeType.lmPrint">
+	<summary>
+ In trực tiếp
+ </summary>
+</member><member name="F:D99D0041.ReportModeType.lmExport">
+	<summary>
+ Xuất ra file
+ </summary>
+</member><member name="T:D99D0041.ReportModeType">
+	<summary>
+ Kiểu report
+ </summary>
+</member><member name="F:D99D0041.ReportDataType.lmReportString">
+	<summary>
+ Kiểu chuỗi
+ </summary>
+</member><member name="F:D99D0041.ReportDataType.lmReportNumber">
+	<summary>
+ Kiểu số
+ </summary>
+</member><member name="F:D99D0041.ReportDataType.lmReportDate">
+	<summary>
+ Kiểu ngày
+ </summary>
+</member><member name="T:D99D0041.ReportDataType">
+	<summary>
+ Kiểu dữ liệu của Parameter report
+ </summary>
+</member><member name="F:D99D0041.ModuleOption.lmOptions">
+	<summary>
+ Lưu vào nhánh Options
+ </summary>
+</member><member name="F:D99D0041.ModuleOption.lmDefaults">
+	<summary>
+ Lưu vào nhánh Default
+ </summary>
+</member><member name="F:D99D0041.ModuleOption.lmLastValues">
+	<summary>
+ Lưu vào nhánh LastValue
+ </summary>
+</member><member name="F:D99D0041.ModuleOption.lmOthers">
+	<summary>
+ Lưu vào nhánh Other
+ </summary>
+</member><member name="T:D99D0041.ModuleOption">
+	<summary>
+ Vị trí lưu trữ của Registry
+ </summary>
+</member><member name="F:D99D0041.CodeOption.lmCode">
+	<summary>
+ Dữ liệu sẽ được mã hóa
+ </summary>
+</member><member name="F:D99D0041.CodeOption.lmUncode">
+	<summary>
+ Dữ liệu không mã hóa
+ </summary>
+</member><member name="T:D99D0041.CodeOption">
+	<summary>
+ Mã hóa khi lưu xuống Registry
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderString">
+	<summary>
+ Kiểu chuỗi
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderNumber">
+	<summary>
+ Kiểu số
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderDate">
+	<summary>
+ Kiểu ngày
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderTinyInt">
+	<summary>
+ Kiểu TinyInt
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderInt">
+	<summary>
+ Kiểu Int
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderSmallMoney">
+	<summary>
+ Kiểu SmallMoney
+ </summary>
+</member><member name="F:D99D0041.FinderTypeEnum.lmFinderMoney">
+	<summary>
+ Kiểu Money
+ </summary>
+</member><member name="T:D99D0041.FinderTypeEnum">
+	<summary>
+ Kiểu dữ liệu tìm kiếm
+ </summary>
+</member><member name="F:D99D0041.OutOrderEnum.lmSSSN">
+	<summary>
+ Dạng SSSN
+ </summary>
+</member><member name="F:D99D0041.OutOrderEnum.lmSSNS">
+	<summary>
+ Dạng SSNS
+ </summary>
+</member><member name="F:D99D0041.OutOrderEnum.lmSNSS">
+	<summary>
+ Dạng SNSS
+ </summary>
+</member><member name="F:D99D0041.OutOrderEnum.lmNSSS">
+	<summary>
+ Dạng NSSS
+ </summary>
+</member><member name="T:D99D0041.OutOrderEnum">
+	<summary>
+ Sinh IGE
+ </summary>
+</member>
+</members>
+</doc>

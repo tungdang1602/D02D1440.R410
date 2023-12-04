@@ -1,0 +1,104 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D00D0041
+</name>
+</assembly>
+<members>
+<member name="F:D00D0041.lmOptions.GridOddBackColor">
+	<summary>
+ Màu nền của lưới cho dòng lẻ
+ </summary>
+</member><member name="F:D00D0041.lmOptions.GridOddForeColor">
+	<summary>
+ Màu chữ của lưới cho dòng lẻ
+ </summary>
+</member><member name="F:D00D0041.lmOptions.GridEvenBackColor">
+	<summary>
+ Màu nền của lưới cho dòng chẳn
+ </summary>
+</member><member name="F:D00D0041.lmOptions.GridEvenForeColor">
+	<summary>
+ Màu chữ của lưới cho dòng chẳn
+ </summary>
+</member><member name="T:D00D0041.lmOptions">
+	<summary>
+ Các thông số màu sắc cho lưới
+ </summary>
+</member><member name="M:D00D0041.D00C0001.GetScreenPermission(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Lấy quyền của màn hình
+ </summary>
+	<param name="sUser">User login vào hệ thống</param>
+	<param name="sCompany">Database sử dụng</param>
+	<param name="sModule">Module đang dùng</param>
+	<param name="sScreen">Màn hình cần lấy quyền</param>
+	<param name="SQLServerName">Tên Server kết nối</param>
+	<param name="SQLServerPassword">Password dùng để login vào Server kết nối</param>
+	<returns>Trả về các số 0, 1, 2, 3, 4 nếu thành công. Ngược lại thì trả về -1</returns>
+</member><member name="M:D00D0041.D00C0001.GetInfoFromSystemModule(System.String,System.String@,System.String@,System.String@,System.String@,D00D0041.lmOptions,System.String@)">
+	<summary>
+ Lấy các thông tin về hệ thống của EXE con
+ </summary>
+	<param name="CommandLine">Dòng CommandLine dùng để liên lạc với EXE D00</param>
+	<param name="CompanyID">Database sử dụng</param>
+	<param name="UserID">User sử dụng Lemon3</param>
+	<param name="SQLServerName">Tên Server kết nối đến</param>
+	<param name="SQLServerPassword">Password login vào Server kết nối đến</param>
+	<param name="Options">Thông số về màu sắc</param>
+	<param name="ConnectionUser">User login vào Server</param>
+</member><member name="M:D00D0041.D00C0001.EncryptString(System.String,System.Boolean)">
+	<summary>
+ Mã hoá chuỗi truyền vào
+ </summary>
+	<param name="txtString">Chuỗi truyền vào</param>
+	<param name="Encrypt">Mã hóa</param>
+	<returns>Chuỗi đã mã hóa</returns>
+	<remarks></remarks>
+</member><member name="T:D00D0041.D00C0001">
+	<summary>
+ Liên quan đến các vấn đề về phân quyền
+ </summary>
+</member><member name="F:D00D0041.EnumLanguage.Vietnamese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Việt
+ </summary>
+</member><member name="F:D00D0041.EnumLanguage.English">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Anh
+ </summary>
+</member><member name="F:D00D0041.EnumLanguage.French">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Pháp (chưa sử dụng)
+ </summary>
+</member><member name="F:D00D0041.EnumLanguage.Chinese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Trung Quốc (chưa sử dụng)
+ </summary>
+</member><member name="F:D00D0041.EnumLanguage.Japanese">
+	<summary>
+ Ngôn ngữ đang dùng: Tiếng Nhật (chưa sử dụng)
+ </summary>
+</member><member name="T:D00D0041.EnumLanguage">
+	<summary>
+ Enum miêu tả trạng thái của ngôn ngữ hiện tại
+ </summary>
+</member><member name="M:D00D0041.D00C0003.SecurityL3R4(System.String,D00D0041.EnumLanguage,System.String,System.String,System.String,System.String)">
+	<summary>
+ Kiểm tra Security khi chạy module .NET
+ </summary>
+	<param name="sExe">tên EXE truyền vào (viết tắt). Ví dụ: D28E0040</param>
+	<param name="nLanguage">Ngôn ngữ để thông báo lỗi (nếu có)</param>
+	<param name="L3_APP_NAME">Theo tài liệu chuẩn của DIGINET</param>
+	<param name="L3_HS_SECTION">Theo tài liệu chuẩn của DIGINET</param>
+	<param name="L3_HS_MODULE">Theo tài liệu chuẩn của DIGINET</param>
+	<param name="L3_HS_VALUE">Theo tài liệu chuẩn của DIGINET</param>
+	<returns>Trả về True nếu exe hợp lệ, ngược lại trả về False</returns>
+</member><member name="T:D00D0041.D00C0003">
+	<summary>
+ Các vấn đề liên quan đến Security
+ </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "D02D1440", "D02D1440\D02D1440.vbproj", "{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Debug|x86.ActiveCfg = Debug|x86
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Debug|x86.Build.0 = Debug|x86
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Release|x86.ActiveCfg = Release|x86
+		{745230DE-BC70-4E1A-AC5C-C6B8DE7784D8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
